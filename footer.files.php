@@ -93,19 +93,18 @@
 	<?= $flash_user; ?>
 
 	<script src="<?= PROOT; ?>assets/js/jquery-3.7.1.min.js"></script>
-<!-- jquery -->
-<script src="/plugins/jquery/jquery.min.js"></script>
-   <!-- Bootstrap -->
-   <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Owl-carousel -->
-  <script src="/plugins/owl-carousel/js/owl.carousel.min.js"></script>
-   <!--  validator -->
- <script src="/plugins/validator/validator-init.js"></script>
-  <!-- Apexcharts -->
-  <script src="/plugins/apexchart/apexcharts.min.js"></script>
-  <script src="/plugins/apexchart/apexchart-init.js"></script>
-  <!-- scripts -->
-  <script src="/js/scripts.js"></script>
+	<!-- jquery -->
+	<!-- Bootstrap -->
+	<script src="<?= PROOT; ?>assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Owl-carousel -->
+	<script src="<?= PROOT; ?>assets/js/owl.carousel.min.js"></script>
+	<!--  validator -->
+	<script src="<?= PROOT; ?>assets/js/validator-init.js"></script>
+	<!-- Apexcharts -->
+	<script src="<?= PROOT; ?>assets/js/apexcharts.min.js"></script>
+	<script src="<?= PROOT; ?>assets/js/apexchart-init.js"></script>
+	<!-- scripts -->
+	<script src="<?= PROOT; ?>assets/js/scripts.js"></script>
 
 
 

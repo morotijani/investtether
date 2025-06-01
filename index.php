@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-            <h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">Tradix</strong>. <br> Buy and sell cryptocurrency</h1>
+            <h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">InvestTether</strong>. <br> Buy and sell cryptocurrency</h1>
             <p class="mb-4 h4">Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
             <div class="d-grid gap-2 d-sm-block intro-btn mb-4 mb-lg-0">
               <button class="btn btn-primary me-sm-4" type="button">Get Started</button>
@@ -243,7 +243,7 @@
           <div class="col-12 col-md-8 col-lg-7">
             <div class="section-heading text-center">
               <h2>Create your cryptocurrency portfolio today</h2>
-              <p class="text-gray"> Tradix has a variety of features that make it the best place to start trading</p>
+              <p class="text-gray"> InvestTether has a variety of features that make it the best place to start trading</p>
             </div>
           </div>
         </div>
@@ -290,7 +290,7 @@
                     <span class="port-icon shadow-6 text-primary d-flex align-items-center justify-content-center rounded-circle fs-2 me-4"> <i class="la la-mobile"></i></span>
                     <div>
                       <h3 class="fw-semi-bold text-dark-400 fs-4 mb-2">Mobile apps</h3>
-                      <p class="text-gray"> Stay on top of the markets with the Tradix app for <a href="#!" class="text-primary">Android</a> or <a href="#!" class="text-primary">iOS</a>.</p>
+                      <p class="text-gray"> Stay on top of the markets with the InvestTether app for <a href="#!" class="text-primary">Android</a> or <a href="#!" class="text-primary">iOS</a>.</p>
                     </div>
                   </div>
                 </div>
@@ -321,7 +321,7 @@
               <div class="card-body pt-3 px-3 p-0">
                 <span class="text-primary mb-3 fa-3x"><i class="la la-mobile"></i></span>
                 <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">Mobile</h3>
-                <p class=" mb-4">All the power of Tradix's cryptocurrency exchange, in the palm of your hand. Download theTradix mobile crypto trading app today</p>
+                <p class=" mb-4">All the power of InvestTether's cryptocurrency exchange, in the palm of your hand. Download the InvestTether mobile crypto trading app today</p>
               </div>
               <div class="card-footer p-0 bg-transparent border-0">
                 <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
@@ -333,7 +333,7 @@
               <div class="card-body p-0">
                 <span class="text-primary mb-3 fa-3x"><i class="la la-desktop"></i></span>
                 <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">Desktop</h3>
-                <p class=" mb-4">Powerful crypto trading platform for those who mean business. The Tradix crypto  trading experience, tailor-made for your Windows or MacOS device.</p>
+                <p class=" mb-4">Powerful crypto trading platform for those who mean business. The InvestTether crypto  trading experience, tailor-made for your Windows or MacOS device.</p>
               </div>
               <div class="card-footer p-0 bg-transparent border-0">
                 <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
@@ -345,7 +345,7 @@
               <div class="card-body p-0">
                 <span class="text-primary mb-3 fa-3x"><i class="la la-connectdevelop"></i></span>
                 <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">API</h3>
-                <p class=" mb-4">The Tradix API is designed to provide an easy and efficient way to integrate your trading  application into our platform.</p>   
+                <p class=" mb-4">The InvestTether API is designed to provide an easy and efficient way to integrate your trading  application into our platform.</p>   
               </div>
               <div class="card-footer bg-transparent border-0">
                 <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
@@ -363,28 +363,28 @@
             <div class="row justify-content-between">
               <div class="client-slide owl-carousel owl-theme">
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/1.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/Bitcoin.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CoinEdition.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/3.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/TET.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/4.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CT.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/5.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/TIA.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/1.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CryptoDaily.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CoinEdition.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="/images/brand/3.webp" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/Bitcoin.svg" loading="lazy" alt="…"></a>
                 </div>
               </div>
               <!-- client-slide end -->
@@ -396,75 +396,6 @@
     </section>
     <!--====================== Trade App End ======================-->
 
-    <!--====================== Testimonial Start ======================-->
-    <section class="testimonial section-padding bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-6">
-            <div class="section-heading text-center">
-              <h2>What our customer says</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-xl-10">
-            <div class="bg-white rounded shadow-5">
-              <div class="owl-carousel owl-theme">
-                <div class="slide d-md-flex align-items-center">
-                  <div class="col-12 col-md-6 pe-md-4">
-                    <img class="img-fluid rounded-start" src="/images/testimonial/1.jpg" loading="lazy" alt="…">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="p-4">
-                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
-                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
-                      <div class="mt-3">
-                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
-                        <p class="text-gray"> CEO, Example Company</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- slide end -->
-                <div class="slide d-md-flex align-items-center">
-                  <div class="col-12 col-md-6 pe-md-4">
-                    <img class="img-fluid rounded-start" src="/images/testimonial/2.jpg" loading="lazy" alt="…">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="p-4">
-                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
-                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
-                      <div class="mt-3">
-                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
-                        <p class="text-gray"> CEO, Example Company</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- slide end -->
-                <div class="slide d-md-flex align-items-center">
-                  <div class="col-12 col-md-6 pe-md-4">
-                    <img class="img-fluid rounded-start" src="/images/testimonial/1.jpg" loading="lazy" alt="…">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="p-4">
-                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
-                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
-                      <div class="mt-3">
-                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
-                        <p class="text-gray"> CEO, Example Company</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- slide end -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--====================== Testimonial End ======================-->
 
     <!--====================== Promo Start ======================-->
     <section class="promo section-padding bg-white border-bottom">
@@ -511,7 +442,7 @@
     <!--====================== Promo End ======================-->
 
     <!--====================== Cta Start ======================-->
-    <section class="section-padding border-bottom">
+    <section class="section-padding  bg-light border-bottom">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6 col-xl-7">
@@ -540,77 +471,7 @@
     </section>
     <!--====================== Cta End ======================-->
 
-    <!--====================== Blog Start ======================-->
-    <section class="blog section-padding border-bottom">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-6">
-            <div class="section-heading text-center">
-              <h2>Blog</h2>
-              <p class="text-gray"> Our Latest blog</p>
-            </div>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card h-100 shadow-2 border-0  bg-white">
-              <img class="img-fluid card-img-top rounded-0" src="/images/blog/1.jpg" loading="lazy" alt="…">
-              <div class="card-body  p-4">
-                <a href="blog-single.html">
-                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
-                </a>
-                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
-              </div>
-              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
-                <ul class="d-flex justify-content-between">
-                  <a href="#!" class=" text-gray"><img src="/images/avatar/5.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
-                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-          <div class="col">
-            <div class="card h-100 shadow-2 border-0  bg-white">
-              <img class="img-fluid card-img-top rounded-0" src="/images/blog/2.jpg" loading="lazy" alt="…">
-              <div class="card-body  p-4">
-                <a href="blog-single.html">
-                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
-                </a>
-                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
-              </div>
-              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
-                <ul class="d-flex justify-content-between">
-                  <a href="#!" class=" text-gray"><img src="/images/avatar/6.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
-                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-          <div class="col">
-            <div class="card h-100 shadow-2 border-0  bg-white">
-              <img class="img-fluid card-img-top rounded-0" src="/images/blog/3.jpg" loading="lazy" alt="…">
-              <div class="card-body  p-4">
-                <a href="blog-single.html">
-                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
-                </a>
-                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
-              </div>
-              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
-                <ul class="d-flex justify-content-between">
-                  <a href="#!" class=" text-gray"><img src="/images/avatar/7.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
-                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-        </div>
-      </div>
-    </section>
-    <!--====================== Blog End ======================-->
-
+   
     <!--====================== Get touch Start ======================-->
     <section class="get-touch section-padding">
       <div class="container">
@@ -636,7 +497,7 @@
             <div class="card flex-row shadow-2 bg-white rounded border-0 p-4">
               <span class="text-primary me-3"><i class="fas fa-cubes fa-2x"></i></span>
               <div class="card-body p-0">
-                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Tradix Blog</h3>
+                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">InvestTether Blog</h3>
                 <p class="text-gray"> News and updates from the world’s leading cryptocurrency exchange. </p>
               </div>
             </div>
@@ -647,7 +508,7 @@
               <span class="text-primary me-3"><i class="fas fa-certificate fa-2x"></i></span>
               <div class="card-body p-0">
                 <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Careers</h3>
-                <p class="text-gray"> Help build the future of technology. Start your new career at Tradix.</p>
+                <p class="text-gray"> Help build the future of technology. Start your new career at InvestTether.</p>
               </div>
             </div>
             <!-- card end -->
@@ -657,7 +518,7 @@
               <span class="text-primary me-3"><i class="far fa-life-ring fa-2x"></i></span>
               <div class="card-body p-0">
                 <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Community</h3>
-                <p class="text-gray"> Tradix is global. Join the discussion in our worldwide communities.</p>
+                <p class="text-gray"> InvestTether is global. Join the discussion in our worldwide communities.</p>
               </div>
             </div>
             <!-- card end -->
