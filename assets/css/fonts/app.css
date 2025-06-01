@@ -1,0 +1,131 @@
+
+
+.turret-road-extralight {
+    font-family: "Turret Road", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.turret-road-light {
+    font-family: "Turret Road", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.turret-road-regular {
+    font-family: "Turret Road", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.turret-road-medium {
+    font-family: "Turret Road", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.turret-road-bold {
+    font-family: "Turret Road", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.turret-road-extrabold {
+    font-family: "Turret Road", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/*  */
+
+.h-rem-6 {
+    height: 1.5rem !important;
+}
+
+.w-rem-6 {
+    width: 1.5rem !important;
+}
+
+.text-xs {
+    font-size: .75rem !important;
+}
+
+.form-control-flush {
+    box-shadow: none;
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+.form-control-flush:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.text-xl {
+    font-size: calc(1.275rem + .3vw) !important;
+}
+
+.fw-bold {
+    font-weight: 600 !important;
+}
+
+.blurred {
+    filter: blur(5px);
+}
+
+.ls-tight {
+    letter-spacing: -.025em !important;
+}
+
+.text-2xl {
+    font-size: calc(1.325rem + .9vw) !important;
+}
+
+.text-heading {
+    --x-text-opacity: 1;
+    color: var(--x-heading-color) !important;
+}
+
+.my-n4 {
+    margin-top: -1rem !important;
+    margin-bottom: -1rem !important;
+}
+.shadow-soft-3, .shadow-soft-3-hover:hover {
+box-shadow: 0 9px 9px -1px rgba(10, 22, 70, .04) !important;
+}
+
+.text-sm {
+    font-size: .875rem !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+[class*=shadow] {
+    transition: all .15sease-in-out;
+}
+
+.icon-shape {
+    text-align: center;
+    vertical-align: middle;
+    width: var(--x-size);
+    height: var(--x-size);
+    border-radius: .375rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.icon {
+    --x-size: 3rem;
+    font-size: calc(var(--x-size) / 1.75);
+    line-height: 1;
+}
+
+.icon-sm {
+    --x-size: 2rem;
+}
