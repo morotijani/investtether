@@ -5,317 +5,670 @@
     include ("nav.php");
 
 ?>
-
-
-    <!-- ========== MAIN CONTENT ========== -->
-    <main role="main">
-        <!--Hero section-->
-        <section class="pt-lg-10" style="
-               background: url(<?= PROOT; ?>assets/media/svg/curvlines.svg), linear-gradient(300deg, rgb(0, 34, 73) -16.95%, rgb(2, 43, 104) 32.79%, rgb(4, 125, 214) 81.77%, rgb(53, 193, 239) 95.88%, rgb(45, 196, 195) 105.72%);
-               background-position: center;
-               background-repeat: no-repeat;
-               background-size: cover;
-            ">
-            <div class="container">
-                <div class="pt-5">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row align-items-center gy-5 px-lg-6 position-relative">
-                                <div class="col-md-6 col-12" data-cue="slideInLeft">
-                                    <div class="d-flex flex-column gap-7">
-                                        <div class="d-flex flex-column gap-3 mb-lg-10">
-                                            <div class="d-flex flex-row align-items-center">
-                                                <a href="#!" class="bg-opacity-50 text-bg-primary border border-primary badge px-3 py-2 fw-medium rounded-pill fs-6">
-                                                    <span class="">investtether.com</span>
-                                                    <span class="ms-1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
-															</path>
-														</svg>
-													</span>
-												</a>
-											</div>
-                                            <div class="d-flex flex-column gap-5">
-                                                <div class="d-flex flex-column gap-3">
-                                                    <h1 class="mb-0 text-white-stable display-4">Money movement, fueled by people</h1>
-                                                    <p class="mb-0 text-white-50 lead">The go-to platform for secure crypto transactions and management.</p>
-                                                </div>
-                                                <div class="d-flex flex-row align-items-center gap-2">
-                                                    <a href="#!"><img src="<?= PROOT; ?>assets/media/svg/playstore.svg" alt="playstore"></a>
-                                                    <a href="#!"><img src="<?= PROOT; ?>assets/media/svg/appstore.svg" alt="appstore"></a>
-                                                    <img src="<?= PROOT; ?>assets/media/svg/qr-code.svg" alt="qr-code" class="icon-md icon-shape">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 position-lg-absolute bottom-0 mb-lg-6">
-                                            <span class="text-white-stable fs-6">Great</span>
-											<div>
-												<img src="<?= PROOT; ?>assets/media/svg/star.svg" alt="star">
-												<img src="<?= PROOT; ?>assets/media/svg/star.svg" alt="star">
-												<img src="<?= PROOT; ?>assets/media/svg/star.svg" alt="star">
-												<img src="<?= PROOT; ?>assets/media/svg/star.svg" alt="star">
-												<img src="<?= PROOT; ?>assets/media/svg/star-light.svg" alt="star">
-											</div>
-											<span class="text-white-stable">6,427&nbsp;reviews on</span>
-											<span class="lh-1"><span>
-											<svg width="82" height="20" viewBox="0 0 82 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0_2350_3858)">
-												<path d="M21.3386 7.14197H29.5601V8.66726H26.3274V17.2417H24.5498V8.66726H21.3314V7.14197H21.3386ZM29.2088 9.92883H30.7284V11.3401H30.7571C30.8073 11.1405 30.9004 10.9481 31.0366 10.7627C31.1728 10.5774 31.3377 10.3992 31.5312 10.2496C31.7247 10.0928 31.9398 9.97159 32.1763 9.87181C32.4129 9.77915 32.6566 9.72926 32.9003 9.72926C33.0866 9.72926 33.2228 9.73638 33.2945 9.74351C33.3662 9.75064 33.4378 9.76489 33.5167 9.77202V11.3258C33.402 11.3044 33.2873 11.2902 33.1655 11.2759C33.0436 11.2617 32.9289 11.2545 32.8142 11.2545C32.5419 11.2545 32.2838 11.3116 32.0401 11.4185C31.7964 11.5254 31.5886 11.6893 31.4094 11.896C31.2302 12.1098 31.0868 12.3664 30.9793 12.68C30.8718 12.9937 30.8216 13.35 30.8216 13.7563V17.2345H29.2017V9.92883L29.2088 9.92883ZM40.964 17.2417H39.3728V16.2224H39.3441C39.1434 16.5931 38.8495 16.8853 38.4553 17.1062C38.0611 17.3272 37.6597 17.4412 37.2511 17.4412C36.2835 17.4412 35.581 17.206 35.151 16.7285C34.7209 16.2509 34.5059 15.5311 34.5059 14.5688V9.92883H36.1258V14.412C36.1258 15.0535 36.2476 15.5097 36.4985 15.7734C36.7422 16.0371 37.0934 16.1725 37.5378 16.1725C37.8819 16.1725 38.1614 16.1226 38.3908 16.0157C38.6202 15.9088 38.8065 15.7734 38.9427 15.5952C39.0861 15.4241 39.1864 15.2103 39.2509 14.968C39.3155 14.7256 39.3441 14.4619 39.3441 14.1768V9.93595H40.964V17.2417ZM43.7237 14.8967C43.7738 15.3671 43.953 15.695 44.2612 15.8874C44.5766 16.0727 44.9493 16.1725 45.3866 16.1725C45.5371 16.1725 45.7091 16.1583 45.9027 16.1369C46.0962 16.1155 46.2826 16.0656 46.4474 16.0015C46.6194 15.9373 46.7556 15.8375 46.8703 15.7092C46.9778 15.5809 47.028 15.417 47.0208 15.2103C47.0137 15.0036 46.9348 14.8326 46.7915 14.7043C46.6481 14.5688 46.4689 14.4691 46.2467 14.3835C46.0245 14.3051 45.7736 14.2338 45.4869 14.1768C45.2002 14.1198 44.9135 14.0557 44.6196 13.9915C44.3186 13.9274 44.0247 13.8418 43.7452 13.7492C43.4656 13.6565 43.2147 13.5282 42.9925 13.3643C42.7703 13.2075 42.5911 13.0008 42.4621 12.7513C42.3259 12.5019 42.2614 12.1954 42.2614 11.8247C42.2614 11.4256 42.3618 11.0977 42.5553 10.8269C42.7488 10.556 42.9997 10.3422 43.2936 10.1783C43.5946 10.0144 43.9244 9.90032 44.2899 9.82904C44.6555 9.76489 45.0067 9.72926 45.3364 9.72926C45.7163 9.72926 46.0819 9.77202 46.4259 9.85042C46.77 9.92883 47.0854 10.0571 47.3649 10.2424C47.6444 10.4206 47.8738 10.6558 48.0602 10.9409C48.2465 11.226 48.3612 11.5753 48.4114 11.9815H46.7198C46.6409 11.5967 46.4689 11.3329 46.1894 11.2046C45.9098 11.0692 45.5873 11.0051 45.2289 11.0051C45.1142 11.0051 44.978 11.0122 44.8203 11.0336C44.6626 11.055 44.5193 11.0906 44.3759 11.1405C44.2397 11.1904 44.1251 11.2688 44.0247 11.3686C43.9315 11.4684 43.8813 11.5967 43.8813 11.7606C43.8813 11.9602 43.953 12.117 44.0892 12.2381C44.2254 12.3593 44.4046 12.4591 44.6268 12.5446C44.849 12.623 45.0999 12.6943 45.3866 12.7513C45.6733 12.8083 45.9672 12.8725 46.2682 12.9366C46.5621 13.0008 46.8488 13.0863 47.1355 13.179C47.4222 13.2716 47.6731 13.3999 47.8953 13.5639C48.1175 13.7278 48.2967 13.9274 48.4329 14.1697C48.5691 14.412 48.6408 14.7185 48.6408 15.0749C48.6408 15.5097 48.5404 15.8732 48.3397 16.1797C48.139 16.479 47.881 16.7285 47.5656 16.9138C47.2502 17.0991 46.8918 17.2417 46.5048 17.3272C46.1177 17.4127 45.7306 17.4555 45.3507 17.4555C44.8848 17.4555 44.4548 17.4056 44.0605 17.2987C43.6663 17.1918 43.3223 17.035 43.0355 16.8283C42.7488 16.6144 42.5195 16.3507 42.3546 16.0371C42.1897 15.7235 42.1037 15.3457 42.0894 14.911H43.7237V14.8967ZM49.0708 9.92883H50.2965V7.73355H51.9165V9.92883H53.3787V11.1334H51.9165V15.0393C51.9165 15.2103 51.9236 15.3529 51.938 15.4812C51.9523 15.6023 51.9881 15.7092 52.0383 15.7948C52.0885 15.8803 52.1673 15.9444 52.2748 15.9872C52.3824 16.03 52.5186 16.0514 52.7049 16.0514C52.8196 16.0514 52.9343 16.0514 53.049 16.0442C53.1637 16.0371 53.2783 16.0228 53.393 15.9943V17.2417C53.2138 17.263 53.0346 17.2773 52.8698 17.2987C52.6977 17.3201 52.5257 17.3272 52.3465 17.3272C51.9165 17.3272 51.5724 17.2844 51.3144 17.206C51.0563 17.1276 50.8485 17.0064 50.7051 16.8496C50.5546 16.6928 50.4614 16.5004 50.404 16.2652C50.3539 16.03 50.318 15.7591 50.3109 15.4598V11.1476H49.0852V9.92883H49.0708ZM54.5255 9.92883H56.0594V10.9195H56.0881C56.3175 10.4919 56.6329 10.1925 57.0414 10.0072C57.45 9.82191 57.8872 9.72925 58.3675 9.72925C58.9481 9.72925 59.4498 9.82904 59.8799 10.0357C60.31 10.2353 60.6684 10.5133 60.9551 10.8697C61.2418 11.226 61.4496 11.6394 61.593 12.1098C61.7364 12.5803 61.808 13.0863 61.808 13.6209C61.808 14.1127 61.7435 14.5902 61.6145 15.0464C61.4855 15.5097 61.2919 15.9159 61.0339 16.2723C60.7759 16.6287 60.4461 16.9067 60.0448 17.1205C59.6434 17.3343 59.1774 17.4412 58.6327 17.4412C58.3962 17.4412 58.1596 17.4198 57.9231 17.3771C57.6865 17.3343 57.4572 17.263 57.2421 17.1704C57.0271 17.0777 56.8192 16.9566 56.64 16.8069C56.4537 16.6572 56.3032 16.4861 56.1741 16.2937H56.1455V19.943H54.5255V9.92883ZM60.1881 13.5924C60.1881 13.2645 60.1451 12.9438 60.0591 12.6302C59.9731 12.3165 59.8441 12.0457 59.672 11.8034C59.5 11.561 59.285 11.3686 59.0341 11.226C58.776 11.0835 58.4822 11.0051 58.1525 11.0051C57.4715 11.0051 56.9554 11.2403 56.6114 11.7107C56.2673 12.1811 56.0953 12.8083 56.0953 13.5924C56.0953 13.963 56.1383 14.3051 56.2315 14.6187C56.3247 14.9323 56.4537 15.2032 56.64 15.4313C56.8192 15.6593 57.0343 15.8375 57.2851 15.9658C57.536 16.1013 57.8299 16.1654 58.1596 16.1654C58.5323 16.1654 58.8406 16.087 59.0986 15.9373C59.3566 15.7876 59.5645 15.5881 59.7294 15.3529C59.8942 15.1105 60.0161 14.8397 60.0878 14.5332C60.1523 14.2267 60.1881 13.9131 60.1881 13.5924ZM63.0481 7.14197H64.668V8.66726H63.0481V7.14197ZM63.0481 9.92883H64.668V17.2417H63.0481V9.92883ZM66.1159 7.14197H67.7358V17.2417H66.1159V7.14197ZM72.7031 17.4412C72.1153 17.4412 71.5921 17.3414 71.1334 17.149C70.6746 16.9566 70.2876 16.6857 69.965 16.3507C69.6496 16.0086 69.4059 15.6023 69.241 15.1319C69.0762 14.6615 68.9902 14.1412 68.9902 13.5781C68.9902 13.0222 69.0762 12.509 69.241 12.0386C69.4059 11.5682 69.6496 11.1619 69.965 10.8198C70.2804 10.4776 70.6746 10.2139 71.1334 10.0215C71.5921 9.82904 72.1153 9.72926 72.7031 9.72926C73.2909 9.72926 73.8141 9.82904 74.2729 10.0215C74.7316 10.2139 75.1186 10.4848 75.4412 10.8198C75.7566 11.1619 76.0003 11.5682 76.1651 12.0386C76.33 12.509 76.416 13.0222 76.416 13.5781C76.416 14.1412 76.33 14.6615 76.1651 15.1319C76.0003 15.6023 75.7566 16.0086 75.4412 16.3507C75.1258 16.6928 74.7316 16.9566 74.2729 17.149C73.8141 17.3414 73.2909 17.4412 72.7031 17.4412ZM72.7031 16.1654C73.0615 16.1654 73.3769 16.087 73.6421 15.9373C73.9073 15.7876 74.1223 15.5881 74.2943 15.3457C74.4664 15.1034 74.5882 14.8254 74.6742 14.5189C74.7531 14.2125 74.7961 13.8989 74.7961 13.5781C74.7961 13.2645 74.7531 12.958 74.6742 12.6444C74.5954 12.3308 74.4664 12.06 74.2943 11.8176C74.1223 11.5753 73.9073 11.3828 73.6421 11.2332C73.3769 11.0835 73.0615 11.0051 72.7031 11.0051C72.3447 11.0051 72.0293 11.0835 71.7641 11.2332C71.4989 11.3828 71.2839 11.5824 71.1118 11.8176C70.9398 12.06 70.818 12.3308 70.7319 12.6444C70.6531 12.958 70.6101 13.2645 70.6101 13.5781C70.6101 13.8989 70.6531 14.2125 70.7319 14.5189C70.8108 14.8254 70.9398 15.1034 71.1118 15.3457C71.2839 15.5881 71.4989 15.7876 71.7641 15.9373C72.0293 16.0941 72.3447 16.1654 72.7031 16.1654ZM76.8891 9.92883H78.1148V7.73355H79.7347V9.92883H81.1969V11.1334H79.7347V15.0393C79.7347 15.2103 79.7419 15.3529 79.7562 15.4812C79.7706 15.6023 79.8064 15.7092 79.8566 15.7948C79.9067 15.8803 79.9856 15.9444 80.0931 15.9872C80.2006 16.03 80.3368 16.0514 80.5232 16.0514C80.6379 16.0514 80.7525 16.0514 80.8672 16.0442C80.9819 16.0371 81.0966 16.0228 81.2113 15.9943V17.2417C81.0321 17.263 80.8529 17.2773 80.688 17.2987C80.516 17.3201 80.344 17.3272 80.1648 17.3272C79.7347 17.3272 79.3907 17.2844 79.1326 17.206C78.8746 17.1276 78.6667 17.0064 78.5234 16.8496C78.3728 16.6928 78.2797 16.5004 78.2223 16.2652C78.1721 16.03 78.1363 15.7591 78.1291 15.4598V11.1476H76.9034V9.92883L76.8891 9.92883Z" fill="white" />
-												<path d="M19.4463 7.14199H12.0204L9.72672 0.114258L7.42585 7.14198L0 7.13486L6.01379 11.4826L3.71292 18.5032L9.72672 14.1626L15.7333 18.5032L13.4396 11.4826L19.4463 7.14199Z" fill="#00B67A" />
-												<path d="M13.9557 13.072L13.4396 11.4826L9.72668 14.1625L13.9557 13.072Z" fill="#005128" />
-											</g>
-											<defs>
-												<clipPath id="clip0_2350_3858">
-													<rect width="81.2903" height="20" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-										</span>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-5 offset-xxl-1 col-md-6" data-cue="slideInRight">
-                           <div class="text-center mt-lg-8 d-flex justify-content-center">
-                              <img src="<?= PROOT; ?>assets/media/Retail.png" alt="hero img"
-                                 class="img-fluid dark-mode-none">
-                              <img src="<?= PROOT; ?>assets/media/Retail.png" alt="hero img"
-                                 class="img-fluid d-none dark-mode-block">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+    <!--====================== Intro Start ======================-->
+    <section class="border-bottom section-padding">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">Tradix</strong>. <br> Buy and sell cryptocurrency</h1>
+            <p class="mb-4 h4">Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
+            <div class="d-grid gap-2 d-sm-block intro-btn mb-4 mb-lg-0">
+              <button class="btn btn-primary me-sm-4" type="button">Get Started</button>
+              <button class="btn btn-outline btn-outline-primary text-primary" type="button">Browse Now</button>
             </div>
-         </div>
-      	</section>
-      	<!--Hero section-->
-
-	  	<!--Marquee-->
-      	<div class="nav-scroller">
-            <div class="container-fluid" data-cue="fadeIn">
-               <div class="row py-4 text-center justify-content-center gy-4">
-                  	<div class="col-lg-12 col-12">
-                     	<div class="marquee h-auto" data-cue="slideInLeft">
-							<div class="track d-flex gap-4">
-								<?php 
-									if (is_array($coin_data)) {
-										if (isset($coin_data['data'])) {
-											foreach (array_slice($coin_data['data'], 0, 10) as $crypto) {
-												$icon = "https://s2.coinmarketcap.com/static/img/coins/64x64/{$crypto['id']}.png";
-												echo '
-														<div class="mx-2">
-															<a class="nav-link" href="javascript:;">
-																<img src="' . $icon . '" alt="' . $crypto['name'] .'" class="img-fluid w-rem-6 h-rem-6" style="height: 1.5rem !important; width: 1.5rem !important;">
-																' . $crypto['name'] . ' (' . $crypto['symbol'] . ') : $' . number_format($crypto['quote']['USD']['price'], 2) . '
-															</a>
-														</div>
-												';
-											}
-										}
-									}
-								?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Marquee-->
-
-        <!-- Clients -->
-        <div class="bg-soft-primary-light">
-            <div class="container content-space-1">
+            <!-- intro-content end -->
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1">
+            <div class="intro-form-exchange p-4 shadow-5 rounded bg-white">
+              <form class="needs-validation" novalidate>
                 <div class="mb-4">
-                    <h5>Thousands of world’s leading companies trust Xpto</h5>
+                  <label class="me-sm-2">Send</label>
+                  <div class="invalid-feedback">This field is required.</div>
+                  <div class="input-group">
+                    <select name='currency' class="form-select" required>
+                      <option value="1" selected>Bitcoin</option>
+                      <option value="2">Litecoin</option>
+                    </select>
+                    <input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
+                  </div>
                 </div>
-
-                <div class="row">
-
-					<div class="col py-3">
-						<img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/Bitcoin.svg" alt="Logo">
-					</div>
-					<div class="col py-3">
-                        <img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/TET.svg" alt="Logo">
-                        
-                    </div>
-
-                    <div class="col py-3">
-                        <img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/CryptoDaily.svg" alt="Logo">
-                    </div>
-
-                    <div class="col py-3">
-                        <img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/TIA.svg" alt="Logo">
-                    </div>
-
-                    <div class="col py-3">
-                        <img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/CT.svg" alt="Logo">
-                    </div>
-
-                    <div class="col py-3">
-                        <img class="avatar avatar-xl avatar-4x3" src="<?= PROOT; ?>assets/media/svg/CoinEdition.svg" alt="Logo">
-                    </div>
+                <div class="mb-4">
+                  <label class="me-sm-2">Get</label>
+                  <div class="invalid-feedback">This field is required.</div>
+                  <div class="input-group mb-3">
+                    <select name='currency' class="form-select" required>
+                      <option value="3" selected>Bitcoin</option>
+                      <option value="4">Litecoin</option>
+                    </select>
+                    <input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
+                  </div>
+                  <div class="d-flex justify-content-between mt-0 align-items-center">
+                    <p class=" mb-0">Monthly Limit</p>
+                    <span class="mb-0 text-dark-400 fs-6 fw-semi-bold">$49750 remaining</span>
+                  </div>
                 </div>
+                <button type="submit" name="submit" class="btn btn-primary w-100 position-relative text-white mt-2"> Exchange Now 
+                  <span class="btn-icon position-absolute"><i class="la la-arrow-right"></i></span>
+                </button>
+              </form>
             </div>
+            <!-- intro-form-exchange end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Intro End ======================-->
+
+    <!--====================== Price Start ======================-->
+    <section class="price-grid section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc BTC fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6">Bitcoin</p>
+                </div>
+                <p class="text-gray"> 24h</p>
+              </div>
+              <div class="card-body">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="btcChart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc LTC fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6">Litecoin</p>
+                </div>
+                <p class="text-gray">  24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="ltcChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc DASH fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6">Dashcoin</p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="dashChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc XRP fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6">Ripple</p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="xrpChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc ETH fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6"> Ethereum</p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="ethChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc USDT fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6"> Tether</p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="usdtChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc EOS fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6"> Eosio </p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="eosChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border">
+              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
+                <div class="d-flex align-items-center">
+                  <i class="cc XTZ fs-3 me-2"></i>
+                  <p class=" text-dark-400 fs-6">Tezos </p>
+                </div>
+                <p class=" mb-0"> 24h</p>
+              </div>
+              <div class="card-body pt-3 px-3">
+                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
+                <span class="text-success">+2.05%</span>
+                <div id="xtzChart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Price End ======================-->
+
+    <!--====================== Get start Start ======================-->
+    <section class="section-padding bg-light-300">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center mb-5">
+              <h2>Get started in a few minutes</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <span class="text-primary fa-3x"><i class="la la-user-plus"></i></span>
+              <h3 class="h4 fw-semi-bold mt-3 text-dark-400">Create an account</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <span class="text-primary fa-3x"><i class="la la-bank"></i></span>
+              <h3 class="h4 fw-semi-bold mt-3 text-dark-400">Link your bank account</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <span class="text-primary fa-3x"><i class="la la-exchange"></i></span>
+              <h3 class="h4 fw-semi-bold mt-3 text-dark-400">Start buying & selling</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Get start End ======================-->
+
+    <!--====================== Portfolio Start ======================-->
+    <section class="portfolio section-padding" data-scroll-index="2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="section-heading text-center">
+              <h2>Create your cryptocurrency portfolio today</h2>
+              <p class="text-gray"> Tradix has a variety of features that make it the best place to start trading</p>
+            </div>
+          </div>
         </div>
 
-        <section class="my-5" data-cue="fadeIn">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 offset-xl-3 col-lg-8 mx-auto col-12">
-						<div class="d-flex flex-column gap-4 text-center">
-							<div class="d-flex justify-content-center">
-								<span
-								class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">Features</span>
-							</div>
-							<div>
-								<h2 class="mb-0 display-6">Smart features for smarter financial management</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-      	</section>
-
-		<section class="" data-cue="fadeIn">
-        	<div class="container py-5">
-				<div class="row align-items-center gy-5 gy-lg-0 bg-success bg-opacity-10 rounded-4 text-dark text-opacity-75">
-					<div class="col-xl-5 offset-xl-1 col-lg-6 col-12" data-cue="slideInLeft">
-						<div class="d-flex flex-column gap-4">
-							<div>
-								<span class="badge bg-success bg-opacity-10 border border-success text-success rounded-pill py-2 px-3 text-uppercase ls-md">Wallet
-								Budget</span>
-							</div>
-							<div class="d-flex flex-column gap-2">
-								<h3 class="mb-0 fs-2">Send money instantly – no bank account required</h3>
-								<p class="mb-0">Send, store, and receive BTC, ETH, USDT and more in your free and secure Paxful cryptocurrency wallet.</p>
-							</div>
-							<a href="#" class="icon-link icon-link-hover link-success">
-								<span>Learn More</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-								class="bi bi-arrow-right" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-xl-5 col-lg-6 col-12" data-cue="slideInRight">
-						<div class="d-flex justify-content-center mt-6">
-							<img src="assets/media/bg-3.png" alt="mobile right" class="img-fluid dark-mode-none">
-							<img src="assets/media/bg-3.png" alt="mobile right" class="img-fluid d-none dark-mode-block">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="">
-			<div class="container py-lg-8 py-5">
-				<div class="row align-items-center gy-5 gy-lg-0 bg-warning bg-opacity-10 rounded-4 text-dark text-opacity-75">
-					<div class="col-xl-7 col-lg-6 col-12 order-2 order-lg-1" data-cue="slideInLeft">
-						<div class="d-flex justify-content-center mt-6">
-							<img src="assets/media/bg-1.png" alt="mobile left"
-								class="img-fluid dark-mode-none">
-							<img src="assets/media/bg-1.png" alt="mobile left"
-								class="img-fluid d-none dark-mode-block">
-						</div>
-					</div>
-					<div class="col-xl-4 col-lg-6 col-12 order-1 order-lg-2" data-cue="slideInRight">
-						<div class="d-flex flex-column gap-4">
-							<div>
-								<span class="badge bg-warning bg-opacity-10 border border-warning-subtle text-warning-emphasis rounded-pill py-2 px-3 text-uppercase small ls-md">Investtether</span>
-							</div>
-							<div class="d-flex flex-column gap-2">
-								<div class="mt-3">
-							<div class="d-flex align-items-center gap-3 mb-2">
-								<div class="icon-shape icon-lg bg-warning-subtle rounded-3">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-										d="M4.50656 9.75H19.4934C19.718 9.75114 19.9399 9.70186 20.1428 9.60579C20.3458 9.50973 20.5245 9.36933 20.666 9.19496C20.8074 9.02058 20.9079 8.81668 20.9601 8.59829C21.0122 8.37989 21.0146 8.15259 20.9672 7.93313C20.2706 4.64063 16.5 2.25 12 2.25C7.5 2.25 3.72937 4.64063 3.03281 7.93313C2.98538 8.15259 2.98782 8.37989 3.03995 8.59829C3.09208 8.81668 3.19257 9.02058 3.33401 9.19496C3.47546 9.36933 3.65424 9.50973 3.85718 9.60579C4.06012 9.70186 4.28204 9.75114 4.50656 9.75ZM12 3.75C15.7331 3.75 18.9572 5.68219 19.4934 8.25H4.50656L4.5 8.24344C5.04281 5.68219 8.26688 3.75 12 3.75ZM21.4931 14.295L17.6372 15.7013L14.1562 14.3034C13.9775 14.232 13.7781 14.232 13.5994 14.3034L10.1306 15.6919L6.65625 14.3034C6.4852 14.2351 6.29499 14.2321 6.12188 14.295L1.99687 15.795C1.82253 15.8717 1.68392 16.0119 1.60918 16.1871C1.53444 16.3624 1.52916 16.5594 1.59442 16.7384C1.65968 16.9173 1.79058 17.0648 1.96057 17.1507C2.13055 17.2367 2.32687 17.2548 2.50969 17.2013L3.75 16.7522V17.25C3.75 18.2446 4.14509 19.1984 4.84835 19.9016C5.55161 20.6049 6.50544 21 7.5 21H16.5C17.4946 21 18.4484 20.6049 19.1516 19.9016C19.8549 19.1984 20.25 18.2446 20.25 17.25V16.3434L22.0059 15.705C22.1044 15.6762 22.1959 15.6275 22.2748 15.5619C22.3537 15.4963 22.4183 15.4152 22.4646 15.3237C22.5109 15.2321 22.5379 15.132 22.544 15.0296C22.55 14.9272 22.535 14.8246 22.4999 14.7282C22.4647 14.6319 22.4102 14.5437 22.3396 14.4693C22.269 14.3948 22.1839 14.3356 22.0896 14.2953C21.9952 14.2551 21.8936 14.2346 21.791 14.2352C21.6884 14.2358 21.587 14.2574 21.4931 14.2987V14.295ZM18.75 17.25C18.75 17.8467 18.5129 18.419 18.091 18.841C17.669 19.2629 17.0967 19.5 16.5 19.5H7.5C6.90326 19.5 6.33097 19.2629 5.90901 18.841C5.48705 18.419 5.25 17.8467 5.25 17.25V16.2075L6.36281 15.8025L9.84375 17.1966C10.0225 17.268 10.2219 17.268 10.4006 17.1966L13.8694 15.8081L17.3381 17.1966C17.5092 17.2649 17.6994 17.2679 17.8725 17.205L18.7416 16.8891L18.75 17.25ZM1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H21.75C21.9489 11.25 22.1397 11.329 22.2803 11.4697C22.421 11.6103 22.5 11.8011 22.5 12C22.5 12.1989 22.421 12.3897 22.2803 12.5303C22.1397 12.671 21.9489 12.75 21.75 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z"
-                                       fill="#7A4F01" />
-                                 </svg>
-                              </div>
-                              <h3 class="fs-4 mb-0">Do more with your crypto Digital wallet</h3>
-                           </div>
-                           <div>
-                              <p class="mb-0">Get your personale wallet address instantly, and join the financial freedom.</p>
-                           </div>
-                        </div>
-                     </div>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-lg-6 col-xl-7">
+              <div class="row g-5 g-lg-4">
+                <div class="col-12 col-xl-6">
+                  <div class="d-flex">
+                    <span class="port-icon shadow-6 text-primary d-flex align-items-center justify-content-center rounded-circle fs-2 me-4"><i class="la la-bar-chart"></i></span>
+                    <div>
+                      <h3 class="fw-semi-bold text-dark-400 fs-4 mb-2">Manage your portfolio</h3>
+                      <p class="text-gray"> Buy and sell popular digital currencies, keep track of them in the one
+                        place.
+                      </p>
+                    </div>
                   </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-	  	<section class="">
-         	<div class="container py-5">
-				<div class="row align-items-center p-4 gy-5 gy-lg-0 bg-primary bg-opacity-10 rounded-4 text-dark text-opacity-75">
-					<div class="col-12" data-cue="slideInLeft">
-						<div class="d-flex flex-column gap-4">
-							<div>
-								<span class="badge bg-primary bg-opacity-10 border border-primary-subtle text-primary-emphasis rounded-pill py-2 px-3 text-uppercase small ls-md">Investtether</span>
-							</div>
-							<div class="d-flex flex-column gap-2">
-								<h3 class="mb-0 fs-2">More</h3>
-							</div>
-							<div class="row g-4">
-								<div class="col-md">
-									<div class="icon-shape icon-lg bg-primary bg-opacity-10 rounded-2 mb-3">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-											d="M21.75 9C21.7504 8.93027 21.7409 8.86083 21.7219 8.79375L20.3766 4.0875C20.2861 3.77523 20.0971 3.50059 19.8378 3.30459C19.5784 3.10858 19.2626 3.00174 18.9375 3H5.0625C4.73741 3.00174 4.4216 3.10858 4.16223 3.30459C3.90287 3.50059 3.71386 3.77523 3.62344 4.0875L2.27906 8.79375C2.2597 8.86079 2.24991 8.93022 2.25 9V10.5C2.25 11.0822 2.38554 11.6563 2.6459 12.1771C2.90625 12.6978 3.28427 13.1507 3.75 13.5V19.5C3.75 19.8978 3.90804 20.2794 4.18934 20.5607C4.47064 20.842 4.85218 21 5.25 21H18.75C19.1478 21 19.5294 20.842 19.8107 20.5607C20.092 20.2794 20.25 19.8978 20.25 19.5V13.5C20.7157 13.1507 21.0937 12.6978 21.3541 12.1771C21.6145 11.6563 21.75 11.0822 21.75 10.5V9ZM5.0625 4.5H18.9375L20.0081 8.25H3.99469L5.0625 4.5ZM9.75 9.75H14.25V10.5C14.25 11.0967 14.0129 11.669 13.591 12.091C13.169 12.5129 12.5967 12.75 12 12.75C11.4033 12.75 10.831 12.5129 10.409 12.091C9.98705 11.669 9.75 11.0967 9.75 10.5V9.75ZM8.25 9.75V10.5C8.25 11.0967 8.01295 11.669 7.59099 12.091C7.16903 12.5129 6.59674 12.75 6 12.75C5.40326 12.75 4.83097 12.5129 4.40901 12.091C3.98705 11.669 3.75 11.0967 3.75 10.5V9.75H8.25ZM18.75 19.5H5.25V14.175C5.4969 14.2248 5.74813 14.2499 6 14.25C6.58217 14.25 7.15634 14.1145 7.67705 13.8541C8.19776 13.5937 8.6507 13.2157 9 12.75C9.3493 13.2157 9.80224 13.5937 10.3229 13.8541C10.8437 14.1145 11.4178 14.25 12 14.25C12.5822 14.25 13.1563 14.1145 13.6771 13.8541C14.1978 13.5937 14.6507 13.2157 15 12.75C15.3493 13.2157 15.8022 13.5937 16.3229 13.8541C16.8437 14.1145 17.4178 14.25 18 14.25C18.2519 14.2499 18.5031 14.2248 18.75 14.175V19.5ZM18 12.75C17.4033 12.75 16.831 12.5129 16.409 12.091C15.9871 11.669 15.75 11.0967 15.75 10.5V9.75H20.25V10.5C20.25 11.0967 20.0129 11.669 19.591 12.091C19.169 12.5129 18.5967 12.75 18 12.75Z" fill="#8B3DFF" />
-                              			</svg>
-									</div>
-								<div>
-									<h4 class="mb-1">Trade worldwide
-									</h4>
-									<p class="mb-0">Buy and sell local and digital currencies including Bitcoin, Ethereum, Tether, and USDC – across 140 markets with 500+ payment methods.</p>
-									</div>
-									</div>
-									<div class="col-md">
-                           <div class="icon-shape icon-lg bg-primary bg-opacity-10 rounded-2 mb-3">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M16.5 21.75C16.5 21.9489 16.421 22.1396 16.2803 22.2803C16.1397 22.4209 15.9489 22.5 15.75 22.5H8.25C8.05109 22.5 7.86032 22.4209 7.71967 22.2803C7.57902 22.1396 7.5 21.9489 7.5 21.75C7.5 21.551 7.57902 21.3603 7.71967 21.2196C7.86032 21.079 8.05109 21 8.25 21H15.75C15.9489 21 16.1397 21.079 16.2803 21.2196C16.421 21.3603 16.5 21.551 16.5 21.75ZM20.25 9.74995C20.2532 11.0002 19.9708 12.2347 19.4242 13.3592C18.8776 14.4837 18.0814 15.4685 17.0962 16.2384C16.912 16.3796 16.7626 16.561 16.6592 16.7688C16.5559 16.9767 16.5014 17.2054 16.5 17.4375V18C16.5 18.3978 16.342 18.7793 16.0607 19.0606C15.7794 19.3419 15.3978 19.5 15 19.5H9C8.60218 19.5 8.22064 19.3419 7.93934 19.0606C7.65804 18.7793 7.5 18.3978 7.5 18V17.4375C7.49985 17.2081 7.44712 16.9819 7.34587 16.7762C7.24462 16.5704 7.09754 16.3906 6.91594 16.2506C5.93338 15.4853 5.13774 14.5066 4.58925 13.3885C4.04075 12.2704 3.75376 11.0422 3.75 9.79683C3.72563 5.32777 7.33688 1.60777 11.8013 1.49995C12.9013 1.47345 13.9955 1.66725 15.0195 2.06997C16.0434 2.47269 16.9765 3.07617 17.7638 3.84491C18.551 4.61365 19.1766 5.53211 19.6035 6.54622C20.0305 7.56034 20.2503 8.64962 20.25 9.74995ZM18.75 9.74995C18.7503 8.84964 18.5704 7.95836 18.221 7.1286C17.8717 6.29883 17.3598 5.54735 16.7156 4.91837C16.0715 4.28939 15.308 3.79564 14.4701 3.46618C13.6322 3.13671 12.7369 2.9782 11.8369 2.99995C8.18063 3.0862 5.23031 6.13027 5.25 9.78652C5.25336 10.8052 5.4884 11.8098 5.93733 12.7242C6.38627 13.6386 7.03733 14.439 7.84125 15.0646C8.2026 15.3456 8.49489 15.7054 8.69574 16.1167C8.89658 16.528 9.00066 16.9798 9 17.4375V18H11.25V13.8103L8.46937 11.0306C8.32864 10.8898 8.24958 10.699 8.24958 10.5C8.24958 10.3009 8.32864 10.1101 8.46937 9.96933C8.61011 9.8286 8.80098 9.74954 9 9.74954C9.19902 9.74954 9.38989 9.8286 9.53063 9.96933L12 12.4396L14.4694 9.96933C14.5391 9.89964 14.6218 9.84437 14.7128 9.80666C14.8039 9.76895 14.9015 9.74954 15 9.74954C15.0985 9.74954 15.1961 9.76895 15.2872 9.80666C15.3782 9.84437 15.4609 9.89964 15.5306 9.96933C15.6003 10.039 15.6556 10.1217 15.6933 10.2128C15.731 10.3038 15.7504 10.4014 15.7504 10.5C15.7504 10.5985 15.731 10.6961 15.6933 10.7871C15.6556 10.8782 15.6003 10.9609 15.5306 11.0306L12.75 13.8103V18H15V17.4375C15.0008 16.9784 15.1066 16.5256 15.3092 16.1137C15.5118 15.7018 15.8059 15.3417 16.1691 15.0609C16.9754 14.4307 17.6271 13.6247 18.0744 12.7042C18.5217 11.7838 18.7528 10.7733 18.75 9.74995Z"
-                                    fill="#8B3DFF" />
-                              </svg>
-                           </div>
-                           <div>
-                              <h4 class="mb-1">Trade worldwide</h4>
-                              <p class="mb-0">Send cash or cryptocurrency to anyone, anytime - with faster, cheaper, and simpler transactions powered by the blockchain.</p>
-                           </div>
-                        </div>
-						
-                        <div class="col-md">
-                           <div class="icon-shape icon-lg bg-primary bg-opacity-10 rounded-2 mb-3">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M16.5 21.75C16.5 21.9489 16.421 22.1396 16.2803 22.2803C16.1397 22.4209 15.9489 22.5 15.75 22.5H8.25C8.05109 22.5 7.86032 22.4209 7.71967 22.2803C7.57902 22.1396 7.5 21.9489 7.5 21.75C7.5 21.551 7.57902 21.3603 7.71967 21.2196C7.86032 21.079 8.05109 21 8.25 21H15.75C15.9489 21 16.1397 21.079 16.2803 21.2196C16.421 21.3603 16.5 21.551 16.5 21.75ZM20.25 9.74995C20.2532 11.0002 19.9708 12.2347 19.4242 13.3592C18.8776 14.4837 18.0814 15.4685 17.0962 16.2384C16.912 16.3796 16.7626 16.561 16.6592 16.7688C16.5559 16.9767 16.5014 17.2054 16.5 17.4375V18C16.5 18.3978 16.342 18.7793 16.0607 19.0606C15.7794 19.3419 15.3978 19.5 15 19.5H9C8.60218 19.5 8.22064 19.3419 7.93934 19.0606C7.65804 18.7793 7.5 18.3978 7.5 18V17.4375C7.49985 17.2081 7.44712 16.9819 7.34587 16.7762C7.24462 16.5704 7.09754 16.3906 6.91594 16.2506C5.93338 15.4853 5.13774 14.5066 4.58925 13.3885C4.04075 12.2704 3.75376 11.0422 3.75 9.79683C3.72563 5.32777 7.33688 1.60777 11.8013 1.49995C12.9013 1.47345 13.9955 1.66725 15.0195 2.06997C16.0434 2.47269 16.9765 3.07617 17.7638 3.84491C18.551 4.61365 19.1766 5.53211 19.6035 6.54622C20.0305 7.56034 20.2503 8.64962 20.25 9.74995ZM18.75 9.74995C18.7503 8.84964 18.5704 7.95836 18.221 7.1286C17.8717 6.29883 17.3598 5.54735 16.7156 4.91837C16.0715 4.28939 15.308 3.79564 14.4701 3.46618C13.6322 3.13671 12.7369 2.9782 11.8369 2.99995C8.18063 3.0862 5.23031 6.13027 5.25 9.78652C5.25336 10.8052 5.4884 11.8098 5.93733 12.7242C6.38627 13.6386 7.03733 14.439 7.84125 15.0646C8.2026 15.3456 8.49489 15.7054 8.69574 16.1167C8.89658 16.528 9.00066 16.9798 9 17.4375V18H11.25V13.8103L8.46937 11.0306C8.32864 10.8898 8.24958 10.699 8.24958 10.5C8.24958 10.3009 8.32864 10.1101 8.46937 9.96933C8.61011 9.8286 8.80098 9.74954 9 9.74954C9.19902 9.74954 9.38989 9.8286 9.53063 9.96933L12 12.4396L14.4694 9.96933C14.5391 9.89964 14.6218 9.84437 14.7128 9.80666C14.8039 9.76895 14.9015 9.74954 15 9.74954C15.0985 9.74954 15.1961 9.76895 15.2872 9.80666C15.3782 9.84437 15.4609 9.89964 15.5306 9.96933C15.6003 10.039 15.6556 10.1217 15.6933 10.2128C15.731 10.3038 15.7504 10.4014 15.7504 10.5C15.7504 10.5985 15.731 10.6961 15.6933 10.7871C15.6556 10.8782 15.6003 10.9609 15.5306 11.0306L12.75 13.8103V18H15V17.4375C15.0008 16.9784 15.1066 16.5256 15.3092 16.1137C15.5118 15.7018 15.8059 15.3417 16.1691 15.0609C16.9754 14.4307 17.6271 13.6247 18.0744 12.7042C18.5217 11.7838 18.7528 10.7733 18.75 9.74995Z"
-                                    fill="#8B3DFF" />
-                              </svg>
-                           </div>
-                           <div>
-                              <h4 class="mb-1">Supply global markets</h4>
-                              <p class="mb-0">Become a peer-to-peer market maker and benefit from arbitrage trading opportunities across regions and payment methods.</p>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div class="d-flex">
+                    <span class="port-icon shadow-6 text-primary d-flex align-items-center justify-content-center rounded-circle fs-2 me-4"> <i class="la la-calendar-check-o"></i></span>
+                    <div>
+                      <h3 class="fw-semi-bold text-dark-400 fs-4 mb-2">Recurring buys</h3>
+                      <p class="text-gray"> Invest in cryptocurrency slowly over time by scheduling buys daily,
+                        weekly,
+                        or monthly.
+                      </p>
+                    </div>
                   </div>
-               </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div class="d-flex">
+                    <span class="port-icon shadow-6 text-primary d-flex align-items-center justify-content-center rounded-circle fs-2 me-4"> <i class="la la-lock"></i></span>
+                    <div>
+                      <h3 class="fw-semi-bold text-dark-400 fs-4 mb-2">Vault protection</h3>
+                      <p class="text-gray"> For added security, store your funds in a vault with time delayed
+                        withdrawals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div class="d-flex">
+                    <span class="port-icon shadow-6 text-primary d-flex align-items-center justify-content-center rounded-circle fs-2 me-4"> <i class="la la-mobile"></i></span>
+                    <div>
+                      <h3 class="fw-semi-bold text-dark-400 fs-4 mb-2">Mobile apps</h3>
+                      <p class="text-gray"> Stay on top of the markets with the Tradix app for <a href="#!" class="text-primary">Android</a> or <a href="#!" class="text-primary">iOS</a>.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-5 mt-5 mt-lg-0">
+            <img src="/images/portfolio.png" loading="lazy" alt="…" class="img-fluid rounded shadow-7">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Portfolio End ======================-->
 
+    <!--====================== Trade App Start ======================-->
+    <section class="trade-app section-padding pt-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Trade. Anywhere</h2>
+              <p> All of our products are ready to go, easy to use and offer great value to any kind of  business.</p>
             </div>
-         </div>
-      </section>
+          </div>
+        </div>
+        <div class="row g-4 section-padding pt-0">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-3 p-4">
+              <div class="card-body pt-3 px-3 p-0">
+                <span class="text-primary mb-3 fa-3x"><i class="la la-mobile"></i></span>
+                <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">Mobile</h3>
+                <p class=" mb-4">All the power of Tradix's cryptocurrency exchange, in the palm of your hand. Download theTradix mobile crypto trading app today</p>
+              </div>
+              <div class="card-footer p-0 bg-transparent border-0">
+                <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-3 p-4">
+              <div class="card-body p-0">
+                <span class="text-primary mb-3 fa-3x"><i class="la la-desktop"></i></span>
+                <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">Desktop</h3>
+                <p class=" mb-4">Powerful crypto trading platform for those who mean business. The Tradix crypto  trading experience, tailor-made for your Windows or MacOS device.</p>
+              </div>
+              <div class="card-footer p-0 bg-transparent border-0">
+                <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-3 p-4">
+              <div class="card-body p-0">
+                <span class="text-primary mb-3 fa-3x"><i class="la la-connectdevelop"></i></span>
+                <h3 class="fw-semi-bold text-dark-400 card-title mb-3 fs-5">API</h3>
+                <p class=" mb-4">The Tradix API is designed to provide an easy and efficient way to integrate your trading  application into our platform.</p>   
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#!" class="d-flex align-items-center text-primary fw-semi-bold"> Know More <i class="la la-arrow-right ms-3"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  
-    </div>
-</main>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h4 class="fs-4 fw-semi-bold text-dark-400">Trusted by Our <strong>Partners & Investors</strong></h4>
+            </div>
+            
+            <div class="row justify-content-between">
+              <div class="client-slide owl-carousel owl-theme">
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/1.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/3.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/4.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/5.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/1.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></a>
+                </div>
+                <div class="client-logo text-center">
+                  <a href="#!"><img class="img-fluid" src="/images/brand/3.webp" loading="lazy" alt="…"></a>
+                </div>
+              </div>
+              <!-- client-slide end -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Trade App End ======================-->
+
+    <!--====================== Testimonial Start ======================-->
+    <section class="testimonial section-padding bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>What our customer says</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-10">
+            <div class="bg-white rounded shadow-5">
+              <div class="owl-carousel owl-theme">
+                <div class="slide d-md-flex align-items-center">
+                  <div class="col-12 col-md-6 pe-md-4">
+                    <img class="img-fluid rounded-start" src="/images/testimonial/1.jpg" loading="lazy" alt="…">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="p-4">
+                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
+                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
+                      <div class="mt-3">
+                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
+                        <p class="text-gray"> CEO, Example Company</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+                <div class="slide d-md-flex align-items-center">
+                  <div class="col-12 col-md-6 pe-md-4">
+                    <img class="img-fluid rounded-start" src="/images/testimonial/2.jpg" loading="lazy" alt="…">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="p-4">
+                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
+                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
+                      <div class="mt-3">
+                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
+                        <p class="text-gray"> CEO, Example Company</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+                <div class="slide d-md-flex align-items-center">
+                  <div class="col-12 col-md-6 pe-md-4">
+                    <img class="img-fluid rounded-start" src="/images/testimonial/1.jpg" loading="lazy" alt="…">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="p-4">
+                      <span class="mb-3"><img class="img-fluid" src="/images/brand/2.webp" loading="lazy" alt="…"></span>
+                      <p class="text-gray"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas dignissimos similique quas molestiae doloribus recusandae voluptatem et repudiandae veritatis.</p>
+                      <div class="mt-3">
+                        <h3 class="text-dark-400 fw-semi-bold h5">Mr John Doe</h3>
+                        <p class="text-gray"> CEO, Example Company</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Testimonial End ======================-->
+
+    <!--====================== Promo Start ======================-->
+    <section class="promo section-padding bg-white border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-8">
+            <div class="section-heading text-center">
+              <h2>The most trusted cryptocurrency platform</h2>
+              <p class="text-gray">  Here are a few reasons why you should choose Tradix</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
+                <img class="img-fluid" src="/images/svg/protect.svg" loading="lazy" alt="…">
+              </div>
+              <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Secure storage </h3>
+              <p class="text-gray"> We store the vast majority of the digital assets in secure offline storage.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
+                <img class="img-fluid" src="/images/svg/cyber.svg" loading="lazy" alt="…">
+              </div>
+              <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Protected by insurance</h3>
+              <p class="text-gray"> Cryptocurrency stored on our servers is covered by our insurance policy.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center">
+              <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
+                <img class="img-fluid" src="/images/svg/finance.svg" loading="lazy" alt="…">
+              </div>
+              <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Industry best practices</h3>
+              <p class="text-gray"> Tradix supports a variety of the most popular digital currencies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Promo End ======================-->
+
+    <!--====================== Cta Start ======================-->
+    <section class="section-padding border-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6 col-xl-7">
+            <h2 class="fw-bold mb-4">The secure app to store crypto yourself</h2>
+            <ul class="check-list">
+              <li>All your digital assets in one place</li>
+              <li>Use Decentralized Apps</li>
+              <li>Pay friends, not addresses</li>
+            </ul>
+            <div class="mt-4 d-grid gap-2 d-sm-block">
+              <a href="#!" class="btn btn-lg btn-primary me-sm-2 rounded-pill">
+                <img src="/images/android.svg" loading="lazy" alt="…">
+              </a>
+              <a href="#!" class="btn btn-lg btn-primary rounded-pill">
+                <img src="/images/apple.svg" loading="lazy" alt="…">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-5">
+            <div class="mt-5 mt-md-0">
+              <img class="img-fluid" src="/images/app.png" loading="lazy" alt="…">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Cta End ======================-->
+
+    <!--====================== Blog Start ======================-->
+    <section class="blog section-padding border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Blog</h2>
+              <p class="text-gray"> Our Latest blog</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 shadow-2 border-0  bg-white">
+              <img class="img-fluid card-img-top rounded-0" src="/images/blog/1.jpg" loading="lazy" alt="…">
+              <div class="card-body  p-4">
+                <a href="blog-single.html">
+                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
+                </a>
+                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                <ul class="d-flex justify-content-between">
+                  <a href="#!" class=" text-gray"><img src="/images/avatar/5.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
+                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <div class="col">
+            <div class="card h-100 shadow-2 border-0  bg-white">
+              <img class="img-fluid card-img-top rounded-0" src="/images/blog/2.jpg" loading="lazy" alt="…">
+              <div class="card-body  p-4">
+                <a href="blog-single.html">
+                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
+                </a>
+                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                <ul class="d-flex justify-content-between">
+                  <a href="#!" class=" text-gray"><img src="/images/avatar/6.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
+                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <div class="col">
+            <div class="card h-100 shadow-2 border-0  bg-white">
+              <img class="img-fluid card-img-top rounded-0" src="/images/blog/3.jpg" loading="lazy" alt="…">
+              <div class="card-body  p-4">
+                <a href="blog-single.html">
+                  <h3 class="h5 fw-semi-bold text-dark-400 card-title fs-5 mb-3">How to securely store your HD wallet seeds?</h3>
+                </a>
+                <p class="text-gray card-text">Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes.!</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                <ul class="d-flex justify-content-between">
+                  <a href="#!" class=" text-gray"><img src="/images/avatar/7.jpg" loading="lazy" alt="…" class="rounded-circle me-2"> Admin</a>
+                  <a href="#!" class="text-gray fs-6"><i class="la la-calendar"></i> 31 July, 2019</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+      </div>
+    </section>
+    <!--====================== Blog End ======================-->
+
+    <!--====================== Get touch Start ======================-->
+    <section class="get-touch section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Get in touch. Stay in touch.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card flex-row shadow-2 bg-white rounded border-0 p-4">
+              <span class="text-primary me-3"><i class="fas fa-shield-alt fa-2x"></i></span>
+              <div class="card-body p-0">
+                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">24 / 7 Support</h3>
+                <p class="text-gray"> Got a problem? Just get in touch. Our support team is available 24/7.</p>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card flex-row shadow-2 bg-white rounded border-0 p-4">
+              <span class="text-primary me-3"><i class="fas fa-cubes fa-2x"></i></span>
+              <div class="card-body p-0">
+                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Tradix Blog</h3>
+                <p class="text-gray"> News and updates from the world’s leading cryptocurrency exchange. </p>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card flex-row shadow-2 bg-white rounded border-0 p-4">
+              <span class="text-primary me-3"><i class="fas fa-certificate fa-2x"></i></span>
+              <div class="card-body p-0">
+                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Careers</h3>
+                <p class="text-gray"> Help build the future of technology. Start your new career at Tradix.</p>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card flex-row shadow-2 bg-white rounded border-0 p-4">
+              <span class="text-primary me-3"><i class="far fa-life-ring fa-2x"></i></span>
+              <div class="card-body p-0">
+                <h3 class="h5 fw-semi-bold text-dark-400 fs-5 mb-2">Community</h3>
+                <p class="text-gray"> Tradix is global. Join the discussion in our worldwide communities.</p>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================== Get touch End ======================-->
+
+
+   
 
 <?php
  

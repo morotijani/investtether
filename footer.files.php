@@ -93,28 +93,19 @@
 	<?= $flash_user; ?>
 
 	<script src="<?= PROOT; ?>assets/js/jquery-3.7.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-	<script src="<?= PROOT; ?>assets/js/vendor.min.js"></script>
-	<script src="<?= PROOT; ?>assets/js/theme.min.js"></script>
-
-
-	
-	<!-- Libs JS -->
-	<script src="<?= PROOT; ?>assets/js/bootstrap.bundle.min.js"></script>
-	<script src="<?= PROOT; ?>assets/js/simplebar.min.js"></script>
-	<script src="<?= PROOT; ?>assets/js/headhesive.min.js"></script>
-
-	<!-- Theme JS -->
-	<script src="<?= PROOT; ?>assets/js/theme.min.js"></script>
-
-
-   <!--Swiper JS -->
-   <script src="<?= PROOT; ?>assets/js/swiper-bundle.min.js"></script>
-   <script src="<?= PROOT; ?>assets/js/swiper.js"></script>
-   <script src="<?= PROOT; ?>assets/js/scrollCue.min.js"></script>
-   <script src="<?= PROOT; ?>assets/js/scrollcue.js"></script>
+<!-- jquery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+   <!-- Bootstrap -->
+   <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl-carousel -->
+  <script src="/plugins/owl-carousel/js/owl.carousel.min.js"></script>
+   <!--  validator -->
+ <script src="/plugins/validator/validator-init.js"></script>
+  <!-- Apexcharts -->
+  <script src="/plugins/apexchart/apexcharts.min.js"></script>
+  <script src="/plugins/apexchart/apexchart-init.js"></script>
+  <!-- scripts -->
+  <script src="/js/scripts.js"></script>
 
 
 
