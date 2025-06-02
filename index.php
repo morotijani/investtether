@@ -4,59 +4,64 @@
     include ("head.php");
     include ("nav.php");
 
+	//
+	if (isset($_POST['submitindex'])) {
+		redirect(PROOT . 'auth/login');
+	}
+
 ?>
     <!--====================== Intro Start ======================-->
     <section class="border-bottom section-padding">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-            <h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">InvestTether</strong>. <br> Buy and sell cryptocurrency</h1>
-            <p class="mb-4 h4">Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
-            <div class="d-grid gap-2 d-sm-block intro-btn mb-4 mb-lg-0">
-              <button class="btn btn-primary me-sm-4" type="button">Get Started</button>
-              <button class="btn btn-outline btn-outline-primary text-primary" type="button">Browse Now</button>
-            </div>
-            <!-- intro-content end -->
-          </div>
-          <div class="col-12 col-lg-5 offset-lg-1">
-            <div class="intro-form-exchange p-4 shadow-5 rounded bg-white">
-              <form class="needs-validation" novalidate>
-                <div class="mb-4">
-                  <label class="me-sm-2">Send</label>
-                  <div class="invalid-feedback">This field is required.</div>
-                  <div class="input-group">
-                    <select name='currency' class="form-select" required>
-                      <option value="1" selected>Bitcoin</option>
-                      <option value="2">Litecoin</option>
-                    </select>
-                    <input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <label class="me-sm-2">Get</label>
-                  <div class="invalid-feedback">This field is required.</div>
-                  <div class="input-group mb-3">
-                    <select name='currency' class="form-select" required>
-                      <option value="3" selected>Bitcoin</option>
-                      <option value="4">Litecoin</option>
-                    </select>
-                    <input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
-                  </div>
-                  <div class="d-flex justify-content-between mt-0 align-items-center">
-                    <p class=" mb-0">Monthly Limit</p>
-                    <span class="mb-0 text-dark-400 fs-6 fw-semi-bold">$49750 remaining</span>
-                  </div>
-                </div>
-                <button type="submit" name="submit" class="btn btn-primary w-100 position-relative text-white mt-2"> Exchange Now 
-                  <span class="btn-icon position-absolute"><i class="la la-arrow-right"></i></span>
-                </button>
-              </form>
-            </div>
-            <!-- intro-form-exchange end -->
-          </div>
-        </div>
-      </div>
-    </section>
+      	<div class="container">
+        	<div class="row justify-content-between align-items-center">
+          		<div class="col-12 col-lg-6 mb-5 mb-lg-0">
+					<h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">InvestTether</strong>. <br> Buy and sell cryptocurrency</h1>
+					<p class="mb-4 h4">Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
+					<div class="d-grid gap-2 d-sm-block intro-btn mb-4 mb-lg-0">
+						<button class="btn btn-primary me-sm-4" type="button">Get Started</button>
+						<button class="btn btn-outline btn-outline-primary text-primary" type="button">Browse Now</button>
+					</div>
+					<!-- intro-content end -->
+				</div>
+				<div class="col-12 col-lg-5 offset-lg-1">
+					<div class="intro-form-exchange p-4 shadow-5 rounded bg-white">
+						<form class="needs-validation" novalidate>
+							<div class="mb-4">
+								<label class="me-sm-2">Send</label>
+								<div class="invalid-feedback">This field is required.</div>
+									<div class="input-group">
+										<select name='currency' class="form-select" required>
+											<option value="1" selected>Bitcoin</option>
+											<option value="2">USDT</option>
+										</select>
+										<input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
+									</div>
+							</div>
+							<div class="mb-4">
+								<label class="me-sm-2">Get</label>
+								<div class="invalid-feedback">This field is required.</div>
+									<div class="input-group mb-3">
+										<select name='currency' class="form-select" required>
+											<option value="3" selected>Bitcoin</option>
+											<option value="4">USDT</option>
+										</select>
+										<input type="text" name="usd_amount" class="form-control" placeholder="125.00 USD" required>
+									</div>
+								<div class="d-flex justify-content-between mt-0 align-items-center">
+									<p class=" mb-0">Monthly Limit</p>
+									<span class="mb-0 text-dark-400 fs-6 fw-semi-bold">$49,750 remaining</span>
+								</div>
+							</div>
+							<button type="submit" name="submitindex" class="btn btn-primary w-100 position-relative text-white mt-2"> Exchange Now 
+								<span class="btn-icon position-absolute"><i class="la la-arrow-right"></i></span>
+							</button>
+						</form>
+					</div>
+					<!-- intro-form-exchange end -->
+				</div>
+			</div>
+		</div>
+	</section>
     <!--====================== Intro End ======================-->
 
     <!--====================== Price Start ======================-->
@@ -297,7 +302,7 @@
               </div>
           </div>
           <div class="col-12 col-lg-6 col-xl-5 mt-5 mt-lg-0">
-            <img src="/images/portfolio.png" loading="lazy" alt="…" class="img-fluid rounded shadow-7">
+            <img src="<?= PROOT; ?>assets/media/bg-1.png" loading="lazy" alt="…" class="img-fluid rounded shadow-7">
           </div>
         </div>
       </div>
@@ -378,13 +383,13 @@
                   <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/TIA.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CryptoDaily.svg" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/Bitcoin.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
                   <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CoinEdition.svg" loading="lazy" alt="…"></a>
                 </div>
                 <div class="client-logo text-center">
-                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/Bitcoin.svg" loading="lazy" alt="…"></a>
+                  <a href="#!"><img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/CryptoDaily.svg" loading="lazy" alt="…"></a>
                 </div>
               </div>
               <!-- client-slide end -->
@@ -404,7 +409,7 @@
           <div class="col-12 col-xl-8">
             <div class="section-heading text-center">
               <h2>The most trusted cryptocurrency platform</h2>
-              <p class="text-gray">  Here are a few reasons why you should choose Tradix</p>
+              <p class="text-gray">  Here are a few reasons why you should choose InvestTether</p>
             </div>
           </div>
         </div>
@@ -433,7 +438,7 @@
                 <img class="img-fluid" src="/images/svg/finance.svg" loading="lazy" alt="…">
               </div>
               <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Industry best practices</h3>
-              <p class="text-gray"> Tradix supports a variety of the most popular digital currencies.</p>
+              <p class="text-gray">InvestTether supports a variety of the most popular digital currencies.</p>
             </div>
           </div>
         </div>
