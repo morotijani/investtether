@@ -16,7 +16,7 @@
                     <!-- <div class="navigation navigation-2"> -->
                     <div class="navigation">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="<?= PROOT; ?>"><img src="/images/logo.png" loading="lazy" alt="…">
+                            <a class="navbar-brand" href="<?= PROOT; ?>"><img src="<?= PROOT; ?>assets/media/logo.svg" width="35" height="35" loading="lazy" alt="…">
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">

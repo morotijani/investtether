@@ -63,149 +63,111 @@
 		</div>
 	</section>
     <!--====================== Intro End ======================-->
-
-    <!--====================== Price Start ======================-->
-    <section class="price-grid section-padding">
+	
+	<!--====================== Market Start ======================-->
+    <section class="section-padding">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc BTC fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6">Bitcoin</p>
-                </div>
-                <p class="text-gray"> 24h</p>
-              </div>
-              <div class="card-body">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="btcChart"></div>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-8">
+            <div class="section-heading text-center">
+              <h2>The World's Leading Cryptocurrency Exchange</h2>
+              <p class="text-gray"> Trade Bitcoin, ETH, and hundreds of other cryptocurrencies in minutes.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc LTC fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6">Litecoin</p>
-                </div>
-                <p class="text-gray">  24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="ltcChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc DASH fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6">Dashcoin</p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="dashChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc XRP fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6">Ripple</p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="xrpChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc ETH fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6"> Ethereum</p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="ethChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc USDT fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6"> Tether</p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="usdtChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc EOS fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6"> Eosio </p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="eosChart"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card border">
-              <div class="card-header d-flex align-items-center justify-content-between border-0 pt-3 px-3 pb-0">
-                <div class="d-flex align-items-center">
-                  <i class="cc XTZ fs-3 me-2"></i>
-                  <p class=" text-dark-400 fs-6">Tezos </p>
-                </div>
-                <p class=" mb-0"> 24h</p>
-              </div>
-              <div class="card-body pt-3 px-3">
-                <h4 class="text-dark-400 fw-bold">USD 62,548.2254</h4>
-                <span class="text-success">+2.05%</span>
-                <div id="xtzChart"></div>
+        </div>
+        <!-- section-heading end -->
+        <div class="row">
+          <div class="col-12">
+            <div class="table-card border-0">
+              <div class="card-body p-0">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Change</th>
+                      <th>Chart</th>
+                      <th>Trade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   <tr>
+                      <th scope="row" data-label="Number"><span class="fw-bold">1</span></th>
+                      <th data-label="Name">
+                        <div class="d-flex align-items-center">
+                          <span class="icon d-flex align-items-center justify-content-center me-3">
+                            <i class="cc BTC fs-2"></i>
+                          </span>
+                          <span> Bitcoin </span>
+                          <span class="fw-normal ms-3">BTC</span>
+                        </div>
+                      </th>
+                      <th data-label="Price"><span>	USD 680,175.06</span></th>
+                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
+                      <th data-label="Chart"><span class="sparkline8"></span></th>
+                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
+                    </tr>
+  
+                   <tr>
+                      <th scope="row" data-label="Number"><span class="fw-bold">2</span></th>
+                      <th data-label="Name">
+                        <div class="d-flex align-items-center">
+                          <span class="icon d-flex align-items-center justify-content-center me-3">
+                            <i class="cc ETH fs-2"></i>
+                          </span>
+                          <span>  Ethereum  </span>
+                          <span class="ms-3 fw-normal"> ET</span>
+                        </div>
+                      </th>
+                      <th data-label="Price"><span>	USD 680,175.06</span></th>
+                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
+                      <th data-label="Chart"><span class="sparkline8"></span></th>
+                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
+                    </tr>
+  
+                   <tr>
+                      <th scope="row" data-label="Number"><span class="fw-bold">3</span></th>
+                      <th data-label="Name">
+                        <div class="d-flex align-items-center">
+                          <span class="icon d-flex align-items-center justify-content-center me-3">
+                            <i class="cc BCH-alt fs-2"></i>
+                          </span>
+                          <span>Bitcoin Cash</span>
+                          <span class="ms-3 fw-normal"> BCH</span>
+                        </div>
+                      </th>
+                      <th data-label="Price"><span>	USD 680,175.06</span></th>
+                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
+                      <th data-label="Chart"><span class="sparkline8"></span></th>
+                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
+                    </tr>
+  
+                   <tr>
+                      <th scope="row" data-label="Number"><span class="fw-bold">4</span></th>
+                      <th data-label="Name">
+                        <div class="d-flex align-items-center">
+                          <span class="icon d-flex align-items-center justify-content-center me-3">
+                            <i class="cc LTC fs-2"></i>
+                          </span>
+                          <span>Litecoin </span>
+                          <span class="ms-3 fw-normal"> LTC</span>
+                        </div>
+                      </th>
+                      <th data-label="Price"><span>	USD 680,175.06</span></th>
+                      <th data-label="Change"><span class="text-danger ">+1.13%</span></th>
+                      <th data-label="Chart"><span class="sparkline8"></span></th>
+                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--====================== Price End ======================-->
+    <!--====================== Market End ======================-->
 
     <!--====================== Get start Start ======================-->
     <section class="section-padding bg-light-300">
@@ -417,7 +379,7 @@
           <div class="col-12 col-md-4">
             <div class="text-center">
               <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
-                <img class="img-fluid" src="/images/svg/protect.svg" loading="lazy" alt="…">
+                <img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/protect.svg" loading="lazy" alt="…">
               </div>
               <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Secure storage </h3>
               <p class="text-gray"> We store the vast majority of the digital assets in secure offline storage.</p>
@@ -426,7 +388,7 @@
           <div class="col-12 col-md-4">
             <div class="text-center">
               <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
-                <img class="img-fluid" src="/images/svg/cyber.svg" loading="lazy" alt="…">
+                <img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/cyber.svg" loading="lazy" alt="…">
               </div>
               <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Protected by insurance</h3>
               <p class="text-gray"> Cryptocurrency stored on our servers is covered by our insurance policy.</p>
@@ -435,7 +397,7 @@
           <div class="col-12 col-md-4">
             <div class="text-center">
               <div class="promo-content-img d-flex align-items-center justify-content-center p-3 mx-auto my-4">
-                <img class="img-fluid" src="/images/svg/finance.svg" loading="lazy" alt="…">
+                <img class="img-fluid" src="<?= PROOT; ?>assets/media/svg/finance.svg" loading="lazy" alt="…">
               </div>
               <h3 class="text-dark-400 fs-4 fw-semi-bold mb-3">Industry best practices</h3>
               <p class="text-gray">InvestTether supports a variety of the most popular digital currencies.</p>
@@ -448,31 +410,31 @@
 
     <!--====================== Cta Start ======================-->
     <section class="section-padding  bg-light border-bottom">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-md-6 col-xl-7">
-            <h2 class="fw-bold mb-4">The secure app to store crypto yourself</h2>
-            <ul class="check-list">
-              <li>All your digital assets in one place</li>
-              <li>Use Decentralized Apps</li>
-              <li>Pay friends, not addresses</li>
-            </ul>
-            <div class="mt-4 d-grid gap-2 d-sm-block">
-              <a href="#!" class="btn btn-lg btn-primary me-sm-2 rounded-pill">
-                <img src="/images/android.svg" loading="lazy" alt="…">
-              </a>
-              <a href="#!" class="btn btn-lg btn-primary rounded-pill">
-                <img src="/images/apple.svg" loading="lazy" alt="…">
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-5">
-            <div class="mt-5 mt-md-0">
-              <img class="img-fluid" src="/images/app.png" loading="lazy" alt="…">
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-12 col-md-6 col-xl-7">
+					<h2 class="fw-bold mb-4">The secure app to store crypto yourself</h2>
+					<ul class="check-list">
+						<li>All your digital assets in one place</li>
+						<li>Use Decentralized Apps</li>
+						<li>Pay friends, not addresses</li>
+					</ul>
+					<div class="mt-4 d-grid gap-2 d-sm-block">
+						<a href="#!" class="btn btn-lg btn-primary me-sm-2 rounded-pill">
+							<img src="<?= PROOT; ?>assets/media/svg/android.svg" loading="lazy" alt="…">
+						</a>
+						<a href="#!" class="btn btn-lg btn-primary rounded-pill">
+							<img src="<?= PROOT; ?>assets/media/svg/apple.svg" loading="lazy" alt="…">
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-5">
+					<div class="mt-5 mt-md-0">
+						<img class="img-fluid" src="<?= PROOT; ?>assets/media/bg-2.png" loading="lazy" alt="…">
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
     <!--====================== Cta End ======================-->
 

@@ -5,7 +5,7 @@
         	<div class="row">
 				<div class="col-12 col-lg-4">
 					<div class="mb-4 mb-lg-0">
-						<img class="pb-3" src="/images/logo-white.png" loading="lazy" alt="…">
+						<img class="pb-3" src="<?= PROOT; ?>assets/media/logo.svg" width="35" height="35" loading="lazy" alt="…">
 						<p class="text-gray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 				</div>

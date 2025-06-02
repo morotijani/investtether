@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InvestTether</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= PROOT; ?>assets/media/logo.svg">
     <!-- Venobox -->
     <link rel="stylesheet" href="<?= PROOT; ?>assets/css/venobox.min.css">
     <!-- Carousel -->
