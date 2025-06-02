@@ -5,62 +5,10 @@
     }
     $newFont = "yes";
     include ("../head.php");
+    include ("header.app.php");
     
 
 ?>
-<link rel="stylesheet" href="<?= PROOT; ?>assets/css/fonts/themes.min.css">
-<link rel="stylesheet" href="<?= PROOT; ?>assets/css/fonts/app.css">
-    <header id="header" class="navbar navbar-expand-lg navbar-light navbar-end bg-white">
-        <div class="container">
-            <nav class="js-mega-menu navbar-nav-wrap">
-                <a class="navbar-brand" href="<?= PROOT; ?>app/" aria-label="Space">
-                    <img class="navbar-brand-logo" src="<?= PROOT; ?>assets/media/logo.svg" width="35" height="35" alt="Image Description">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-default">
-                        <i class="bi-list"></i>
-                    </span>
-                    <span class="navbar-toggler-toggled">
-                        <i class="bi-x"></i>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="hs-has-mega-menu nav-item">
-                            <a id="landingsMegaMenu" class="nav-link" aria-current="page" href="#" role="button" aria-expanded="false"><i class="bi-twitter me-1"></i></a>
-                        </li>
-                        <li class="hs-has-mega-menu nav-item">
-                            <a id="landingsMegaMenu" class="nav-link" aria-current="page" href="#" role="button" aria-expanded="false"><i class="bi-facebook me-1"></i></a>
-                        </li>
-
-                        <li class="hs-has-mega-menu nav-item">
-                            <a class="nav-link" href="<?= PROOT; ?>app/profile">Hi <?= $user_name; ?>!</a>
-                        </li>
-                        <li class="hs-has-mega-menu nav-item">
-                            <a class="nav-link" href="<?= PROOT; ?>auth/logout">Logout</a>
-                        </li>
-                    
-                        <li class="nav-divider"></li>
-
-                        <li class="nav-item">
-                            <a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="<?= PROOT; ?>auth/login">Deposit</a>
-                            <a class="js-animation-link d-lg-none btn btn-primary" href="<?= PROOT; ?>auth/register">
-                                <i class="bi-sign-turn-slight-right me-1"></i> Withdraw
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="js-animation-link d-none d-lg-inline-block btn btn-primary" href="<?= PROOT; ?>auth/register">
-                                <i class="bi-sign-turn-slight-right me-1"></i> Withdraw
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
     
 	<!-- ========== MAIN CONTENT ========== -->
 	<main id="content" role="main">
