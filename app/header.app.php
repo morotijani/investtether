@@ -1,6 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InvestTether</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= PROOT; ?>assets/media/logo.svg">
     
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/fonts/themes.min.css">
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/other.css">
+    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/theme.min.css">
+    
+    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/vendor.min.css">
+    <!-- <link rel="stylesheet" href="<?= PROOT; ?>assets/css/other.css"> -->
+</head>
+<!-- line-awesome -->
+
+<body>
 
     <header class="header sticky-top bg-white">
         <div class="container">
