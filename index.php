@@ -18,14 +18,14 @@
 					<h1 class="fw-bold mb-3 text-dark-400">Trade with <strong class="text-primary">InvestTether</strong>. <br> Buy and sell cryptocurrency</h1>
 					<p class="mb-4 h4">Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
 					<div class="d-grid gap-2 d-sm-block intro-btn mb-4 mb-lg-0">
-						<button class="btn btn-primary me-sm-4" type="button">Get Started</button>
+						<a class="btn btn-primary me-sm-4" href="<?= PROOT; ?>auth/login">Get Started</a>
 						<button class="btn btn-outline btn-outline-primary text-primary" type="button">Browse Now</button>
 					</div>
 					<!-- intro-content end -->
 				</div>
 				<div class="col-12 col-lg-5 offset-lg-1">
 					<div class="intro-form-exchange p-4 shadow-5 rounded bg-white">
-						<form class="needs-validation" novalidate>
+						<form class="needs-validation" method="POST" novalidate>
 							<div class="mb-4">
 								<label class="me-sm-2">Send</label>
 								<div class="invalid-feedback">This field is required.</div>
@@ -66,106 +66,69 @@
 	
 	<!--====================== Market Start ======================-->
     <section class="section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-xl-8">
-            <div class="section-heading text-center">
-              <h2>The World's Leading Cryptocurrency Exchange</h2>
-              <p class="text-gray"> Trade Bitcoin, ETH, and hundreds of other cryptocurrencies in minutes.</p>
-            </div>
-          </div>
-        </div>
-        <!-- section-heading end -->
-        <div class="row">
-          <div class="col-12">
-            <div class="table-card border-0">
-              <div class="card-body p-0">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>Price</th>
-                      <th>Change</th>
-                      <th>Chart</th>
-                      <th>Trade</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                   <tr>
-                      <th scope="row" data-label="Number"><span class="fw-bold">1</span></th>
-                      <th data-label="Name">
-                        <div class="d-flex align-items-center">
-                          <span class="icon d-flex align-items-center justify-content-center me-3">
-                            <i class="cc BTC fs-2"></i>
-                          </span>
-                          <span> Bitcoin </span>
-                          <span class="fw-normal ms-3">BTC</span>
-                        </div>
-                      </th>
-                      <th data-label="Price"><span>	USD 680,175.06</span></th>
-                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
-                      <th data-label="Chart"><span class="sparkline8"></span></th>
-                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
-                    </tr>
-  
-                   <tr>
-                      <th scope="row" data-label="Number"><span class="fw-bold">2</span></th>
-                      <th data-label="Name">
-                        <div class="d-flex align-items-center">
-                          <span class="icon d-flex align-items-center justify-content-center me-3">
-                            <i class="cc ETH fs-2"></i>
-                          </span>
-                          <span>  Ethereum  </span>
-                          <span class="ms-3 fw-normal"> ET</span>
-                        </div>
-                      </th>
-                      <th data-label="Price"><span>	USD 680,175.06</span></th>
-                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
-                      <th data-label="Chart"><span class="sparkline8"></span></th>
-                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
-                    </tr>
-  
-                   <tr>
-                      <th scope="row" data-label="Number"><span class="fw-bold">3</span></th>
-                      <th data-label="Name">
-                        <div class="d-flex align-items-center">
-                          <span class="icon d-flex align-items-center justify-content-center me-3">
-                            <i class="cc BCH-alt fs-2"></i>
-                          </span>
-                          <span>Bitcoin Cash</span>
-                          <span class="ms-3 fw-normal"> BCH</span>
-                        </div>
-                      </th>
-                      <th data-label="Price"><span>	USD 680,175.06</span></th>
-                      <th data-label="Change"><span class="text-success">+1.13%</span></th>
-                      <th data-label="Chart"><span class="sparkline8"></span></th>
-                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
-                    </tr>
-  
-                   <tr>
-                      <th scope="row" data-label="Number"><span class="fw-bold">4</span></th>
-                      <th data-label="Name">
-                        <div class="d-flex align-items-center">
-                          <span class="icon d-flex align-items-center justify-content-center me-3">
-                            <i class="cc LTC fs-2"></i>
-                          </span>
-                          <span>Litecoin </span>
-                          <span class="ms-3 fw-normal"> LTC</span>
-                        </div>
-                      </th>
-                      <th data-label="Price"><span>	USD 680,175.06</span></th>
-                      <th data-label="Change"><span class="text-danger ">+1.13%</span></th>
-                      <th data-label="Chart"><span class="sparkline8"></span></th>
-                      <th data-label="Button"><a href="#!" class="btn btn-success">Buy</a></th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      	<div class="container">
+        	<div class="row justify-content-center">
+				<div class="col-12 col-xl-8">
+					<div class="section-heading text-center">
+						<h2>The World's Leading Cryptocurrency Exchange</h2>
+						<p class="text-gray"> Trade Bitcoin, ETH, and hundreds of other cryptocurrencies in minutes.</p>
+						</div>
+					</div>
+				</div>
+				<!-- section-heading end -->
+				<div class="row">
+					<div class="col-12">
+						<div class="table-card border-0">
+							<div class="card-body p-0">
+								<table>
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Name</th>
+											<th>Price</th>
+											<th>Change</th>
+											<th>Chart</th>
+											<th>Trade</th>
+										</tr>
+									</thead>
+									<tbody>
+									<?php 
+										if (is_array($coin_data)) {
+											if (isset($coin_data['data'])) {
+												foreach (array_slice($coin_data['data'], 0, 10) as $crypto) {
+													$icon = "https://s2.coinmarketcap.com/static/img/coins/64x64/{$crypto['id']}.png";
+													echo '<tr>
+														<th scope="row" data-label="Number"><span class="fw-bold">' . $crypto['cmc_rank'] . '</span></th>
+														<th data-label="Name">
+															<div class="d-flex align-items-center">
+																<span class="icon d-flex align-items-center justify-content-center me-3">
+																	<img src="' . $icon . '" alt="' . $crypto['name'] .'" class="img-fluid w-rem-6 h-rem-6">
+																</span>
+																<span>' . $crypto['name'] . '</span>
+																<span class="fw-normal ms-3">' . $crypto['symbol'] . '</span>
+															</div>
+														</th>
+														<th data-label="Price"><span>USD ' . number_format($crypto['quote']['USD']['price'], 2) . '</span></th>
+														<th data-label="Change"><span class="' . ($crypto['quote']['USD']['percent_change_24h'] >= 0 ? 'text-success' : 'text-danger') . '">' . number_format($crypto['quote']['USD']['percent_change_24h'], 2) . '%</span></th>
+														<th data-label="Chart"><span class="sparkline8"></span></th>
+														<th data-label="Button"><a href="'.PROOT.'auth/login" class="btn btn-success">Buy</a></th>
+													</tr>';
+									
+												}
+											} else {
+												echo "<tr><td colspan='6' class='text-center'>No data available</td></tr>";
+											}
+										} else {
+											echo "<tr><td colspan='6' class='text-center'>Error fetching data</td></tr>";
+										}
+									?>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
     <!--====================== Market End ======================-->
 

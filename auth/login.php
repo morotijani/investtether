@@ -70,7 +70,7 @@
                         <div class="card-body">
 						   <form class="js-validate needs-validation mb-6" id="loginForm" method="POST" novalidate>
 
-									<ul class="step step-sm step-icon-sm step-centered" id="step-TabFeatures" role="tablist">
+									<ul class="step step-sm step-icon-sm step-centered mb-4" id="step-TabFeatures" role="tablist">
 										<li class="step-item" role="presentation">
 											<a class="step-content-wrapper active" href="#stepEmail" id="stepEmail-tab" data-bs-toggle="tab" data-bs-target="#stepEmail" role="tab" aria-controls="stepEmail" aria-selected="true">
 												<span class="step-icon step-icon-soft-secondary">1</span>
@@ -125,47 +125,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mt-3">
 						<div class="col-lg-12">
 							<div class="text-center">
 								<div class="small mb-3 mb-lg-0 text-body-tertiary">
 								Copyright &copy;
-								<span class="text-primary"><a href="#">BitShell</a></span>
+								<span class="text-primary"><a href="#">InvestTether</a></span>
 								</div>
 							</div>
 						</div>
 					</div>
 					</div>
 				</section>
-				<!--Sign up end-->
-				<div class="position-absolute end-0 bottom-0 m-4">
-					<div class="dropdown">
-					<button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-                  <i class="bi theme-icon-active"></i>
-                  <span class="visually-hidden bs-theme-text">Toggle theme</span>
-               </button>
-               <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
-                  <li>
-                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                        <i class="bi theme-icon bi-sun-fill"></i>
-                        <span class="ms-2">Light</span>
-                     </button>
-                  </li>
-                  <li>
-                     <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                        <i class="bi theme-icon bi-moon-stars-fill"></i>
-                        <span class="ms-2">Dark</span>
-                     </button>
-                  </li>
-                  <li>
-                     <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                        <i class="bi theme-icon bi-circle-half"></i>
-                        <span class="ms-2">Auto</span>
-                     </button>
-                  </li>
-               </ul>
-            </div>
-         </div>
       </main>
 
 	<?php include ("../footer.files.php"); ?>

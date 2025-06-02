@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?= PROOT; ?>assets/css/owl.theme.default.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="<?= PROOT; ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/other.css">
 </head>
 <!-- line-awesome -->
 
