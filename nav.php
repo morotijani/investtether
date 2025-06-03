@@ -38,12 +38,18 @@
                                         <a class="@@support nav-link" href="#">Support
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="<?= PROOT; ?>auth/register">Register</a>
-                                    </li>
-                                    <li class="nav-item mt-3 mt-lg-0">
-                                        <a class="nav-link btn btn-primary btn-sm text-white" href="<?= PROOT; ?>auth/login">Sign in</a>
-                                    </li>
+                                    <?php if (user_is_logged_in()): ?>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn btn-primary btn-sm text-white" href="<?= PROOT; ?>app/">Dashboard</a>
+                                        </li>
+                                        <?php else: ?>
+                                            <li class="nav-item">
+                                            <a class="nav-link" href="<?= PROOT; ?>auth/register">Register</a>
+                                        </li>
+                                        <li class="nav-item mt-3 mt-lg-0">
+                                            <a class="nav-link btn btn-primary btn-sm text-white" href="<?= PROOT; ?>auth/login">Sign in</a>
+                                        </li>
+                                    <?php endif; ?>
                                 </ul>
                             </div>
                         </nav>

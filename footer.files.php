@@ -52,6 +52,60 @@
 		</div>
     </div>
 
+	<!-- DepositModal -->
+	<div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  		<div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content" style="border-top: 5px solid green">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title text-inherit" id="depositModalLabel">Deposit Funds</h5>
+		        	<button type="button" class="btn-close receive-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	</div>
+		      	<div class="modal-body">
+                    <p class="card-text text-body" id="receive-fund-info"></p>
+                    <form id="receivefundForm">
+                        <div class="row" data-kt-buttons="true" id="receive-step-1">
+                            <?php 
+                                if (is_array($coin_data)) {
+                                    if (isset($coin_data['data'])) {
+                                        $i = 1;
+                                        foreach (array_slice($coin_data['data'], 0, 5) as $crypto) {
+                                            $icon = "https://s2.coinmarketcap.com/static/img/coins/64x64/{$crypto['id']}.png";
+
+                            ?>
+                                            <input type="radio" class="btn-check" name="receive_crypto_type" id="receive_crypto_type<?= $i; ?>" autocomplete="off" value="<?= $crypto['name']; ?>">
+                                            <label class="btn" for="receive_crypto_type<?= $i; ?>">                                                                                        
+                                                <img src="<?= $icon; ?>" class="w-rem-6 h-rem-6 rounded-circle img-fluid" alt="..."> <?= $crypto['name'] . ' (' .$crypto['symbol'] . ')'; ?> 
+                                            </label>
+                            
+                            <?php 
+                                            $i++;
+                                        }
+                                    }
+                                }
+                            ?>
+                            <button type="button" class="btn btn-success mt-2" id="receive-view-btn">View</button>
+                        </div>
+                        <div id="receive-step-2" class="d-none text-center">
+                            <div class="w-sm-56 input-group input-group-sm input-group-inline">
+                                <input type="search" class="form-control fw-bolder" name="recieve_wallet_address" id="recieve_wallet_address" value="" placeholder="Receive wallet address" readonly> 
+                                <span class="input-group-text" style="cursor: pointer;" onclick="copyToClipboard(document.getElementById('recieve_wallet_address').value)"><i class="bi bi-clipboard2"></i>&nbsp; Copy</span>
+                            </div>
+                            <div class="text-center my-4">
+                                or
+                            </div>
+                            <img src="" style="width: auto; height: 250px" class="qr-code img-thumbnail img-fluid" />
+                            <br>
+                            <small>Receive by scanning this QR code.</small>
+                            <p id="share-moreinfo"></p>
+                            <br>
+                            <a href="javascript:;" id="back-to-receive-step-1"><< Back</a>
+                        </div>
+                    </form>
+		      	</div>
+		    </div>
+		</div>
+    </div>
+
 	 <style>
         .cookie-wrapper {
             position: fixed; 
@@ -94,8 +148,8 @@
 	<!--  validator -->
 	<script src="<?= PROOT; ?>assets/js/validator-init.js"></script>
 	<!-- Apexcharts -->
-	<script src="<?= PROOT; ?>assets/js/apexcharts.min.js"></script>
-	<script src="<?= PROOT; ?>assets/js/apexchart-init.js"></script>
+	<!-- <script src="<?= PROOT; ?>assets/js/apexcharts.min.js"></script>
+	<script src="<?= PROOT; ?>assets/js/apexchart-init.js"></script> -->
 	<!-- scripts -->
 	<script src="<?= PROOT; ?>assets/js/scripts.js"></script>
 
@@ -169,52 +223,52 @@
 
 			// INITIALIZATION OF BOOTSTRAP VALIDATION
 			// =======================================================
-			HSBsValidation.init('.js-validate', {
-			onSubmit: data => {
-				data.event.preventDefault()
-				alert('Submited')
-			}
-			})
+			// HSBsValidation.init('.js-validate', {
+			// onSubmit: data => {
+			// 	data.event.preventDefault()
+			// 	alert('Submited')
+			// }
+			// })
 
 			// INITIALIZATION OF TOGGLE PASSWORD
 			// =======================================================
-			new HSTogglePassword('.js-toggle-password')
+			// new HSTogglePassword('.js-toggle-password')
 
 
 			// INITIALIZATION OF GO TO
 			// =======================================================
-			new HSGoTo('.js-go-to')
+			// new HSGoTo('.js-go-to')
 
 			// INITIALIZATION OF SWIPER
     		// =======================================================
-			var equalHeight = new Swiper('.js-swiper-equal-height', { 
-				autoplay: {
-					delay: 2000,
-					disableOnInteraction: false,
-				},
-				pagination: {
-					el: '.js-swiper-equal-height-pagination',
-					clickable: true,
-				},
-				breakpoints: {
-					320: {
-						slidesPerView: 1,
-						spaceBetween: 15,
-					},
-					580: {
-						slidesPerView: 2,
-						spaceBetween: 15,
-					},
-					768: {
-						slidesPerView: 3,
-						spaceBetween: 15,
-					},
-					1024: {
-						slidesPerView: 4,
-						spaceBetween: 15,
-					},
-				}
-			});
+			// var equalHeight = new Swiper('.js-swiper-equal-height', { 
+			// 	autoplay: {
+			// 		delay: 2000,
+			// 		disableOnInteraction: false,
+			// 	},
+			// 	pagination: {
+			// 		el: '.js-swiper-equal-height-pagination',
+			// 		clickable: true,
+			// 	},
+			// 	breakpoints: {
+			// 		320: {
+			// 			slidesPerView: 1,
+			// 			spaceBetween: 15,
+			// 		},
+			// 		580: {
+			// 			slidesPerView: 2,
+			// 			spaceBetween: 15,
+			// 		},
+			// 		768: {
+			// 			slidesPerView: 3,
+			// 			spaceBetween: 15,
+			// 		},
+			// 		1024: {
+			// 			slidesPerView: 4,
+			// 			spaceBetween: 15,
+			// 		},
+			// 	}
+			// });
 
 		})()
 

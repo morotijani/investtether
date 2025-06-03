@@ -6,7 +6,7 @@
 				<div class="col-12 col-lg-4">
 					<div class="mb-4 mb-lg-0">
 						<img class="pb-3" src="<?= PROOT; ?>assets/media/logo.svg" width="35" height="35" loading="lazy" alt="…">
-						<p class="text-gray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="text-gray">Fast and secure way to purchase or exchange 150+ cryptocurrencies.</p>
 					</div>
 				</div>
 				<div class="col-4 col-sm-3 col-lg-2">

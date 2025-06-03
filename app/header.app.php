@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="<?= PROOT; ?>assets/css/theme.min.css">
     
     <link rel="stylesheet" href="<?= PROOT; ?>assets/css/vendor.min.css">
-    <!-- <link rel="stylesheet" href="<?= PROOT; ?>assets/css/other.css"> -->
+    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/other.css">
 </head>
-<!-- line-awesome -->
-
 <body>
 
     <header class="header sticky-top bg-white">

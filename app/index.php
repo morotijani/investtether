@@ -4,17 +4,13 @@
         user_login_redirect();
     }
     $newFont = "yes";
-    include ("../head.php");
     include ("header.app.php");
     
-
 ?>
-    
 	<!-- ========== MAIN CONTENT ========== -->
 	<main id="content" role="main">
 		<div class="bg-soft-primary-light">
             <div class="container content-space-1 ">
-
 
                 <div class="row g-3 g-xl-6 mb-4">
                     <div class="col-12">
@@ -84,8 +80,8 @@
 				<div class="mx-auto">
                 <ul class="nav nav-segment d-flex justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= PROOT; ?>app">
-                                <i class="bi-house nav-icon"></i> Dashboard
+                            <a class="nav-link" href="<?= PROOT; ?>app/market">
+                                <i class="bi-shop nav-icon"></i> Market
                             </a>
                         </li>
                         <li class="nav-item">
