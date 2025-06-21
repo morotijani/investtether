@@ -92,12 +92,20 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <label for="">Update transaction status</label>
                     <select name="update_status" id="update_status">
                         <option value="" selected="selected"></option>
                         <option value="0">Pending</option>
                         <option value="1">Successful</option>
                         <option value="2">Canceled</option>
+                    </select>
+                    &nbsp;
+                    <label for="">Income statment</label>
+                    <select name="income_statement" id="income_statement">
+                        <option value="" selected="selected"></option>
+                        <option value="0">loss</option>
+                        <option value="1">earning</option>
                     </select>
                     <input type="hidden" id="transaction_id" name="transaction_id" value="<?= $transaction['transaction_id']; ?>" />
                     <?php else: ?>
@@ -129,6 +137,7 @@
 
         var status = $('#update_status').val();
         var id = $('#transaction_id').val();
+        var income_statement = $('#income_statement').val();
 
         if (status == '') {
             return false;
@@ -136,7 +145,8 @@
 
         var data = {
             id: id,
-            status: status
+            status: status, 
+            income_statement: income_statement
         };
         $.ajax({
             url : "<?= PROOT; ?>xd192/update.transaction.php",
