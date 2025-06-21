@@ -37,6 +37,18 @@
             $status_text = 'danger';
         }
 
+        // income statement
+        $income_statement = $transaction['transaction_income_statement'];
+        $income_status = '';
+        $income_color = '';
+        if ($income_statement == 0) {
+            $income_status = '-';
+            $income_color = 'success'; 
+        } else {
+            $income_status = '+';
+            $income_color = 'danger'; 
+        }
+
 ?>
 <?php ob_start(); ?>
     <div class="modal fade" id="details-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="detailsBackdropLabel" aria-hidden="true">
@@ -85,7 +97,7 @@
                                             <input class="form-control" type="text" id="address" value="<?= $transaction['transaction_to_address']; ?>" readonly>
                                         </div>
                                     </li>
-                                    <li class="list-group-item">Transaction amount: <b><?= money($transaction['transaction_amount']); ?></b></li>
+                                    <li class="list-group-item">Transaction amount: <span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<b><?= money($transaction['transaction_amount']); ?></b></li>
                                     <li class="list-group-item">Transaction note: <b><?= $transaction['transaction_message']; ?></b></li>
                                     <li class="list-group-item">Transaction date: <b><?= pretty_date($transaction['createdAt']); ?></b></li>
                                 </ul>

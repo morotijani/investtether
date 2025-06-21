@@ -279,12 +279,24 @@
                                         $status_text = 'danger';
                                     }
 
+                                    // income statement
+                                    $income_statement = $transaction['transaction_income_statement'];
+                                    $income_status = '';
+                                    $income_color = '';
+                                    if ($income_statement == 0) {
+                                        $income_status = '-';
+                                        $income_color = 'success'; 
+                                    } else {
+                                        $income_status = '+';
+                                        $income_color = 'danger'; 
+                                    }
+
                         ?>
                             <tr>
                                 <td><?= $i; ?></td>
                                 <td><img src="<?= $icon; ?>" width="45" height="45" class="border rounded-circle" /></td>
                                 <td><?= $by['user_email']; ?></td>
-                                <td><?= money($transaction['transaction_amount']); ?></td>
+                                <td><span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<?= money($transaction['transaction_amount']); ?></td>
                                 <td><?= $transaction['transaction_to_address']; ?></td>
                                 <td><span class="badge bg-<?= $status_text; ?>"><?= $status; ?></td>
                                 <td><?= $transaction['transaction_crypto_name'] . ' (' . $transaction['transaction_crypto_symbol'] . ')'; ?></td>
