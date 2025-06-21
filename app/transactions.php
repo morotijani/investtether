@@ -12,13 +12,6 @@
     $transactions = $statement->fetchAll();
     $count_transactions = $statement->rowCount();
 
-    // get ups and down
-    $upsdown = '';
-    if ($transactions['transaction_updown'] == 1) {
-        $upsdown = '+'; 
-    } else {
-        $upsdown = '-'; 
-    }
 
 ?>
     
@@ -131,6 +124,18 @@
                                                                 $status_text = 'danger';
                                                             }
 
+                                                            // get ups and down
+                                                            $income_statement = $transaction['transaction_income_statement'];
+                                                            $income_status = '';
+                                                            $income_color = '';
+                                                            if ($income_statement == 0) {
+                                                                $income_status = '-';
+                                                                $income_color = 'success'; 
+                                                            } else {
+                                                                $income_status = '+';
+                                                                $income_color = 'danger'; 
+                                                            }
+
                                                 ?>
 
 
@@ -149,7 +154,7 @@
                                                                 <span class="badge bg-light text-<?= $status_text; ?>"><?= $status; ?></span>
                                                             </div>
                                                             <div class="text-end">
-                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-danger"><?= $upsdown; ?></span><?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
+                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
                                                                 <span class="d-block text-muted text-xs"><?= '$' . $crypto_price; ?></span>
                                                             </div>
                                                         </div>
