@@ -12,13 +12,20 @@
     $transactions = $statement->fetchAll();
     $count_transactions = $statement->rowCount();
 
+    // get ups and down
+    $upsdown = '';
+    if ($transactions['transaction_updown'] == 1) {
+        $upsdown = '+'; 
+    } else {
+        $upsdown = '-'; 
+    }
+
 ?>
     
 	<!-- ========== MAIN CONTENT ========== -->
 	<main id="content" role="main">
 		<div class="bg-soft-primary-light">
             <div class="container content-space-1 ">
-
 
                 <div class="row g-3 g-xl-6 mb-4">
                     <div class="col-12">
@@ -142,7 +149,7 @@
                                                                 <span class="badge bg-light text-<?= $status_text; ?>"><?= $status; ?></span>
                                                             </div>
                                                             <div class="text-end">
-                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-danger">+</span><?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
+                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-danger"><?= $upsdown; ?></span><?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
                                                                 <span class="d-block text-muted text-xs"><?= '$' . $crypto_price; ?></span>
                                                             </div>
                                                         </div>
