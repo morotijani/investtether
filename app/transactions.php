@@ -13,7 +13,6 @@
     $count_transactions = $statement->rowCount();
 
 ?>
-
     
 	<!-- ========== MAIN CONTENT ========== -->
 	<main id="content" role="main">
@@ -135,7 +134,7 @@
                                                                 </div>
                                                                 <div class="">
                                                                     <span class="d-block text-heading text-sm fw-semibold"><?= $crypto_name; ?> </span>
-                                                                    <span class="d-none d-sm-block text-muted text-xs"><?= timeAgo($createdAt); ?></span>
+                                                                    <span class="d-sm-block text-muted text-xs"><?= pretty_date_notime($transaction["createdAt"]) . ' <i>(' . timeAgo($createdAt) . ')</i>'; ?></span>
                                                                 </div>
                                                             </div>
                                                             <div class="d-none d-md-block text-sm"><?= $shortened; ?></div>
@@ -143,7 +142,7 @@
                                                                 <span class="badge bg-light text-<?= $status_text; ?>"><?= $status; ?></span>
                                                             </div>
                                                             <div class="text-end">
-                                                                <span class="d-block text-heading text-sm fw-bold"><?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
+                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-danger">+</span><?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
                                                                 <span class="d-block text-muted text-xs"><?= '$' . $crypto_price; ?></span>
                                                             </div>
                                                         </div>
@@ -178,6 +177,3 @@
     
     <?php include ("../footer.php"); ?>
 	<?php include ("../footer.files.php"); ?>
-	<script>
-		
-	</script>
