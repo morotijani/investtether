@@ -43,10 +43,10 @@
         $income_color = '';
         if ($income_statement == 0) {
             $income_status = '-';
-            $income_color = 'success'; 
+            $income_color = 'danger'; 
         } else {
             $income_status = '+';
-            $income_color = 'danger'; 
+            $income_color = 'success'; 
         }
 
 ?>
@@ -97,7 +97,13 @@
                                             <input class="form-control" type="text" id="address" value="<?= $transaction['transaction_to_address']; ?>" readonly>
                                         </div>
                                     </li>
-                                    <li class="list-group-item">Transaction amount: <span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<b><?= money($transaction['transaction_amount']); ?></b></li>
+                                    <li class="list-group-item">Transaction amount: 
+                                        <?php if ($income_statement != null): ?> 
+                                            <span class="badge bg-<?= $income_color; ?>">
+                                                <?= $income_status; ?>
+                                            </span>
+                                            <?php endif; ?>
+                                        &nbsp;<b><?= money($transaction['transaction_amount']); ?></b></li>
                                     <li class="list-group-item">Transaction note: <b><?= $transaction['transaction_message']; ?></b></li>
                                     <li class="list-group-item">Transaction date: <b><?= pretty_date($transaction['createdAt']); ?></b></li>
                                 </ul>

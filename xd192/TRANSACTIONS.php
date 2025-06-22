@@ -285,10 +285,10 @@
                                     $income_color = '';
                                     if ($income_statement == 0) {
                                         $income_status = '-';
-                                        $income_color = 'success'; 
+                                        $income_color = 'danger'; 
                                     } else {
                                         $income_status = '+';
-                                        $income_color = 'danger'; 
+                                        $income_color = 'success'; 
                                     }
 
                         ?>
@@ -296,7 +296,13 @@
                                 <td><?= $i; ?></td>
                                 <td><img src="<?= $icon; ?>" width="45" height="45" class="border rounded-circle" /></td>
                                 <td><?= $by['user_email']; ?></td>
-                                <td><span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<?= money($transaction['transaction_amount']); ?></td>
+                                <td>
+                                    <?php if ($income_statement == 0): ?>
+                                    <span class="badge bg-<?= $income_color; ?>">
+                                        <?= $income_status; ?>
+                                    </span>
+                                    <?php endif; ?>
+                                    &nbsp;<?= money($transaction['transaction_amount']); ?></td>
                                 <td><?= $transaction['transaction_to_address']; ?></td>
                                 <td><span class="badge bg-<?= $status_text; ?>"><?= $status; ?></td>
                                 <td><?= $transaction['transaction_crypto_name'] . ' (' . $transaction['transaction_crypto_symbol'] . ')'; ?></td>

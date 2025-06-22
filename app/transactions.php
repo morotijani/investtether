@@ -130,10 +130,10 @@
                                                             $income_color = '';
                                                             if ($income_statement == 0) {
                                                                 $income_status = '-';
-                                                                $income_color = 'success'; 
+                                                                $income_color = 'danger'; 
                                                             } else {
                                                                 $income_status = '+';
-                                                                $income_color = 'danger'; 
+                                                                $income_color = 'success'; 
                                                             }
 
                                                 ?>
@@ -154,7 +154,14 @@
                                                                 <span class="badge bg-light text-<?= $status_text; ?>"><?= $status; ?></span>
                                                             </div>
                                                             <div class="text-end">
-                                                                <span class="d-block text-heading text-sm fw-bold"><span class="badge bg-<?= $income_color; ?>"><?= $income_status; ?></span>&nbsp;<?= money($transaction_amount) . ' ' . $crypto_symbol; ?> </span>
+                                                                <span class="d-block text-sm fw-bold text-<?= (($income_statement != null) ?  $income_color : 'head'); ?>">
+                                                                    <?php if ($income_statement != null): ?>
+                                                                    <span class="badge bg-<?= $income_color; ?>">
+                                                                        <?= $income_status; ?>
+                                                                    </span>
+                                                                    <?php endif;?>
+                                                                    &nbsp;<?= money($transaction_amount) . ' ' . $crypto_symbol; ?> 
+                                                                </span>
                                                                 <span class="d-block text-muted text-xs"><?= '$' . $crypto_price; ?></span>
                                                             </div>
                                                         </div>
